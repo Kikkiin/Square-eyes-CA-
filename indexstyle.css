@@ -1,0 +1,144 @@
+body {
+    background-color: black;
+    padding: 20px;
+}
+
+.logo {
+    max-width: 15%;
+}
+
+nav {
+    margin-top: -90px;
+}
+
+nav li {
+    display: inline;
+    float: right;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 30px;
+}
+
+nav a:hover {
+    color: #c4c3c3;
+}
+
+main {
+    display: grid;
+    width: 100%;
+    grid-gap: 1em;
+    grid-template-areas: 
+    'h1 . cover2'
+    'form form cover2'
+    'h2 h2 h2'
+    'section section section'
+    'p p p';
+}
+
+h1 {grid-area: h1}
+form {grid-area: form}
+.cover2 {grid-area: cover2;}
+h2 {grid-area: h2;}
+section {grid-area: section;}
+p {grid-area: p}
+
+
+.cover2{
+    max-width: 100%;
+    margin-right: 150px;
+    margin-top: 50px;
+    float: right;
+}
+
+h1 {
+    font-family: 'bakbak one', cursive;
+    color: white;
+    padding: 90px;
+    font-size: 58px;
+    max-width: 100%;
+    margin-top: 60px;
+    margin-bottom: 0px;
+}
+
+.getstartedbutton {
+    font-size: 37px;
+    background-color: #d69b28;
+    border-color: #543f17;
+    border-radius: 2em;
+    padding: 10px 20px;
+    margin-top: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 20;
+    left: 35%;
+    margin-bottom: 250px;
+}
+
+.getstartedbutton a {
+    text-decoration: none;
+    color: black;
+}
+
+.getstartedbutton:hover {
+        background-color: #ebbe5e;
+}
+
+h2 {
+    font-family: 'bakbak one', cursive;
+    color: white;
+    padding: 50px;
+    font-size: 56px;
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
+
+p {
+    font-family: 'anek tamil', sans-serif;
+    color: white;
+    padding: 50px;
+    font-size: 30px;
+    margin-bottom: 200px;
+}
+
+section::after{
+    content: '';
+    clear: both;
+    display: table;
+    margin-bottom: 50px;
+}
+
+section {
+    display: grid;
+    padding: 20px;
+    grid-gap: 10px;
+    grid-template-columns: auto auto auto auto ;
+}
+
+.cover5 {
+    max-width: 80%;
+    justify-content: flex-end;
+}
+
+.cover4 {
+    max-width: 80%;
+    justify-content: flex-end;
+}
+
+.cover6 {
+    max-width: 80%;
+    justify-content: flex-end;
+}
+
+.cover7 {
+    max-width: 80%;
+    justify-content: flex-end;
+}
+
+footer {
+    font-family: 'anek tamil', 'sans serif';
+    color: white;
+    font-size: 12px;
+}

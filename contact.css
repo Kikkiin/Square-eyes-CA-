@@ -1,0 +1,170 @@
+body {
+    background-image: url(images/backroundcontact.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.logo {
+    max-width: 10%;
+}
+
+nav {
+    margin-top: -50px;
+}
+
+nav li {
+    display: inline;
+    float: right;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;        
+    padding: 30px;
+}
+
+nav a:hover {
+    color: #c4c3c3;
+}
+
+.current {
+    font-weight: bold;
+}
+
+h1 {
+    font-family: 'bakbak one', cursive;
+    font-size: 35px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+.contact-fieldset {
+    display: block;
+    width: 20rem;
+    height: 15rem;
+    background-color: white;
+    opacity: 50%;
+    border-radius: 1em;
+    padding: 20px;
+    line-height: 80px;
+    font-family: 'anek tamil', 'sans serif';
+    font-size: 23px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.email-nav,
+#email-checkbox {
+    display: none;
+}
+
+input [type="text"] {
+    background-color: black;
+    color: white;
+
+}
+
+#email-checkbox:checked ~ .email-nav {
+    display: block;
+}
+
+.email {
+    cursor: pointer;
+}
+
+.email-nav {
+    background-color: #f1f1f1;
+    position: absolute;
+    top: 0;
+    left: 400px;
+    padding: 20px;
+    border-radius: 1em;
+    height: 15rem;
+    line-height: 30px;
+    font-family: 'anek tamil', 'sans serif';
+    font-size: 20px;
+}
+
+#message {
+    height: 70px;
+}
+
+.sendinput {
+    background-color: #d69b28;
+    border-color: #543f17;
+    border-radius: 1rem;
+    padding: 2px;
+}
+
+
+.number,
+#call-checkbox {
+    display: none;
+}
+
+#call-checkbox:checked ~ .number {
+    display: block;
+}
+
+.call {
+    cursor: pointer;
+}
+
+.number {
+    position: absolute;
+    top: 0;
+    left: 400px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 1em;
+    line-height: 60px;
+    font-family: 'anek tamil', 'sans serif';
+    font-size: 20px;
+}
+
+
+.chat-nav,
+#chat-checkbox {
+    display: none;
+}
+
+#chat-checkbox:checked ~ .chat-nav {
+    display: block;
+}
+
+.chat {
+    cursor: pointer;
+}
+
+.chat-nav {
+    position: absolute;
+    top: 0;
+    left: 400px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 1em;
+    line-height: 30px;
+    font-family: 'anek tamil', 'sans serif';
+    font-size: 20px;
+}
+
+#chat {
+    height: 200px;
+}
+
+footer {
+    font-family: 'anek tamil', 'sans serif';
+    color: white;
+    font-size: 12px;
+    position: fixed;
+    bottom: 0;
+}

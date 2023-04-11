@@ -1,0 +1,85 @@
+body{
+    background-image: url('images/backround-login.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'anek tamil', 'sans serif';
+}
+
+img{
+    max-width: 10%;
+}
+
+h1 {
+    font-family: 'bakbak one', cursive;
+    color: white;
+    display:flex;
+    justify-content: center;
+}
+
+form {
+    display: grid;
+    grid-gap: 10px;
+    min-height: 200px;
+    justify-content: center;
+}
+
+.forminput {
+    display: block;
+    width: 20rem;
+    height: 2rem;
+    background-color: white;
+    opacity: 40%;
+    border-radius: 1em;
+    border-color: white;
+}
+
+.emailinput ,.passwordinput {
+    color: white;
+    font-size: 22px;
+}
+
+.checks {
+    display: block;
+}
+
+.forgotpasswordinput {
+    color: white;
+    font-size: 11px;
+}
+
+.createaccountinput {
+    color: white;
+    font-size: 15px;
+}
+
+.signininput {
+    font-size: 24px;
+    background-color: #d69b28;
+    border-color: #543f17;
+    border-radius: 2em;
+    padding: 6px 17px;
+    margin-top: 1em;
+    cursor: pointer;
+    justify-content: right;
+}
+
+.signininput a {
+    text-decoration: none;
+    color: black;
+}
+
+.signininput:hover {
+    background-color: #ebbe5e;
+}
+
+input [type="text"] {
+    padding: 5px;
+    width: 100%;
+    min-height: 20px;
+    min-width: 8px;
+    color: white;
+}
+
+
+
+

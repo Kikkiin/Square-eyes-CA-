@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <meta name="description" content="The checkout page to Square eyes website" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="payment.css" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Tamil&family=Bakbak+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/348dd23869.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="images/SquareEyes_Logo.png" alt="Logo for this page" class="logo"/></a>
+        <nav>
+            <ul>
+                <li><a href="login.html">Log in</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="shoppingbag.html">Shopping bag</a></li>
+                <li><a href="searchbar.html">Search bar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form class="container">
+            <div>
+                <fieldset>
+                    <label for="cnumber" class="payment-details">Card number</label>
+                    <input type="text" name="cnumber" id="cnumber" class="payment-form">
+
+                    <label for="expiry" class="payment-details">Expiry date</label>
+                    <input type="text" name="expiry" id="expiry" class="payment-form">
+
+                    <label for="cvc" class="payment-details">CVC / CVV</label>
+                    <input type="text" name="cvc" id="cvc" class="payment-form">
+
+                    <label for="name" class="payment-details">Name on card</label>
+                    <input type="text" name="name" id="name" class="payment-form">
+
+                    <input type="checkbox" checked="checked" name="save" class="savecheck"> Save for later
+                 </fieldset>  
+            </div>
+
+        </form>
+
+        <div class="button">
+            <button type="purchase" class="purchaseinput"><a href="success.html">Purchase</a></button>
+        </div>
+
+    </main>
+    
+</body>
+</html>

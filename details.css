@@ -1,0 +1,125 @@
+body {
+    background-color: black;
+    background-image: url('images/spidermanbackround2.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+img{
+    max-width: 10%;
+}
+
+nav {
+    margin-top: -50px;
+}
+
+nav li {
+    display: inline-block;
+    float: right;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 30px;
+}
+
+nav a:hover {
+    color: #c4c3c3;
+}
+
+main {
+    display: grid;
+    width: 100%;
+    grid-gap: 1em;
+    grid-template-columns: 10% 30% 30% 30%;
+    grid-template-rows: 5% 5% 15% 30% 20% 2%;
+    grid-template-areas: 
+    '. h1 . .'
+    '. h2 . .'
+    '. p . .'
+    '. form spidermanposter info'
+    '. starring . .'
+    '. . . .';
+}
+
+h1 {grid-area: h1;}
+h2 {grid-area: h2;}
+p {grid-area: p;}
+.spidermanposter {grid-area: spidermanposter;}
+form {grid-area: form;}
+.starring {grid-area: starring;}
+.info {grid-area: info;}
+
+h1 {
+    color: white;
+    font-family: 'bakbak one' cursive;
+    font-size: 35px;
+    grid-area: h1;
+    margin: 1;
+}
+
+h2 {
+    color: white;
+    font-family: 'bakbak one', cursive;
+    font-size: 13px;
+    grid-area: h2;
+    margin: 3;
+}
+
+p {
+    color: white;
+    font-family: 'anek tamil', 'sans serif';
+    font-size: 20px;
+    grid-area: p;
+    margin: 0;
+}
+
+.spidermanposter {
+    max-width: 35%;
+    height: auto;
+    grid-area: spidermanposter;
+    justify-self: right;
+}
+
+.addtochartinput {
+    font-size: 26px;
+    background-color: #d69b28;
+    border-color: #543f17;
+    border-radius: 2em;
+    padding: 6px 17px;
+    margin-top: 1em;
+    cursor: pointer;
+    justify-self: center;
+}
+
+.addtochartinput a {
+    text-decoration: none;
+    color: black;
+    font-family: 'anek tamil', 'sans serif';
+}
+
+.addtochartinput:hover {
+    background-color: #ebbe5e;
+}
+
+h3 {
+    color: white;
+    font-family: 'bakbak one', cursive;
+    font-size: 15px;
+    margin: 0;
+}
+
+h4, h5, h6 {
+    color: white;
+    font-family: 'bakbak one', cursive;
+    font-size: 15px;
+    margin: 0;
+}
+
+p2 {
+    color: white;
+    font-family: 'anek tamil', 'sans serif';
+    font-size: 15px;
+}

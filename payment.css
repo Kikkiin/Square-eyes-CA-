@@ -1,0 +1,104 @@
+body {
+    background-image: url(images/backroundpayment.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.logo {
+    max-width: 10%;
+}
+
+nav {
+    margin-top: -50px;
+}
+
+nav li {
+    display: inline;
+    float: right;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;        
+    padding: 30px;
+}
+
+nav a:hover {
+    color: #c4c3c3;
+}
+
+.container {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    grid-gap: 10px;
+    min-height: 70vh;
+}
+
+fieldset {
+    background-color: #747474 ;
+    opacity: 75%;
+    width: 200px;
+    padding: 25px;
+    border-radius: 1em;
+}
+
+.payment-form {
+    display: block;
+    background-color: #c4c3c3;
+    font-family: 'anek tamil', 'sans serif';
+    border-radius: 1em;
+}
+
+.payment-details {
+    color: white;
+    font-family: 'anek tamil', 'sans serif';
+    display: block;
+    width: 20rem;
+    height: 2rem;
+    background-color: transparent;
+    border-radius: 1em;
+    border-color: white;
+}
+
+.savecheck {
+    color: white;
+    font-family: 'anek tamil', 'sans serif';
+    font-size: 10px;
+}
+
+input [type="text"] {
+    padding: 5px;
+    width: 100%;
+    min-height: 20px;
+    min-width: 8px;
+    color: white;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.purchaseinput {
+    font-size: 26px;
+    background-color: #d69b28;
+    border-color: #543f17;
+    border-radius: 2em;
+    padding: 6px 17px;
+    margin-top: 1em;
+    cursor: pointer;
+}
+
+.purchaseinput a {
+    text-decoration: none;
+    color: black;
+    font-family: 'anek tamil', 'sans serfif';
+}
+
+.signininput:hover {
+    background-color: #ebbe5e;
+}

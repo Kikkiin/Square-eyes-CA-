@@ -1,0 +1,99 @@
+body {
+    background-color: black;
+}
+
+img{
+    max-width: 10%;
+}
+
+nav {
+    margin-top: -50px;
+}
+
+nav li {
+    display: inline;
+    float: right;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 30px;
+}
+
+nav a:hover {
+    color: #c4c3c3;
+}
+
+main {
+    display: grid;
+    width: 100%;
+    grid-gap: 1px;
+    grid-template-areas: 
+    'h1 . spiderbackround1'
+    'button button spiderbackround1'
+    'movies1 movies1 movies1'
+    'movies2 movies2 movies2';
+}
+
+h1 {grid-area: h1;}
+.button {grid-area: button;}
+.spiderbackround1 {grid-area: spiderbackround1;}
+.movies1 {grid-area: movies1;}
+.movies2 {grid-area: movies2;}
+
+h1 {
+    color: white;
+    font-family: 'bakbak one', cursive;
+    font-size: 40px;
+    padding: 50px;
+}
+
+.button {
+    background-color: black;
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    display: inline-block;
+}
+
+.button a {
+    text-decoration: none;
+    color: #d69b28;
+    background-color: black;
+    font-family: 'bakbak one', cursive;
+    font-size: 38px;
+    border: none;
+    padding: 0;
+    margin: 0;  
+    outline: none;
+
+}
+
+.spiderbackround1 {
+    max-width: 40%;
+    margin-bottom: 2px;
+    position: relative;
+    z-index: 1;
+}
+
+h3 {
+    color: white;
+    font-family: 'anek tamil' 'sans serif';
+    font-size: 15px;
+}
+
+h4 {
+    color: white;
+    font-family: 'anek tamil' 'sans serif';
+    font-size: 15px;
+}
+
+section {
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+}

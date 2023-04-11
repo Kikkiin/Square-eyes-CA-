@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <meta name="description" content="The contact page to Square eyes website"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="contact.css" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Tamil&family=Bakbak+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/348dd23869.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="images/SquareEyes_Logo.png" alt="Logo for this page" class="logo"/></a>
+        <nav>
+            <ul>
+                <li><a href="login.html">Log in</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="current">Contact</a></li>
+                <li><a href="shoppingbag.html">Shopping bag</a></li>
+                <li><a href="searchbar.html">Search bar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Contact us</h1>
+
+        <section class="contact-fieldset">        
+            <div class="email">
+                <input type="checkbox" id="email-checkbox">
+                <label for="email-checkbox">Send us an email</label>
+
+            <form class="email-nav">
+                <label for="name" class="name-details">Name</label>
+                <input type="text" name="name" id="name" class="email-form">
+                
+                <label for="email" class="email-details">Email</label>
+                <input type="text" name="email" id="email" class="email-form">
+                
+                <label for="message" class="message-details">Message</label>
+                <input type="text" name="message" id="message" class="email-form">
+               
+                <button class="sendinput" type="send">Send message</a></button>
+            </form>
+            </div>
+
+            <div class="call">
+                <input type="checkbox" id="call-checkbox">
+                <label for="call-checkbox">Call us</label>
+
+                <div class="number">
+                    <a>0047-928-768-83</a>
+                    <a>Monday - Friday 9am - 4pm</a>
+                </div>
+
+            </div>
+
+            <div class="chat">
+                <input type="checkbox" id="chat-checkbox">
+                <label for="chat-checkbox">Chat with us</label>
+
+                <form class="chat-nav">
+                    <label for="chat" class="chat-details">Chat</label>
+                    <input type="text" name="chat" id="chat" class="chat-form">
+                </form>
+            </div>
+        </section>
+  
+    </main>
+    <footer>
+        Copyright &copy; Square eyes 2023
+    </footer>
+</body>
+</html>

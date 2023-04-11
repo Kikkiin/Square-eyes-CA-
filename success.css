@@ -1,0 +1,112 @@
+body {
+    background-image: url(images/backroundsuccess.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.logo {
+    max-width: 10%;
+}
+
+nav {
+    margin-top: -50px;
+}
+
+nav li {
+    display: inline;
+    float: right;
+}
+
+nav a {
+    color: white;
+    text-decoration: none; 
+    padding: 30px;       
+}
+
+nav a:hover {
+    color: #c4c3c3;
+}
+
+main {
+    display: grid;
+    grid-gap: 20px;
+    margin-left: 300px;
+    margin-top: 100px;
+    grid-template-columns: 100px 300px 400px;
+    grid-template-rows: 1fr 150px 40px;
+    grid-template-areas: 
+    'header header header'
+    'image content some'
+    '. button search';
+}
+
+
+.header {
+    font-family: 'anek tamil', 'sans serif';
+    font-size: 30px;
+    color: white;
+    grid-area: header;
+    transform: rotate(-3deg);
+}
+
+.image {
+    grid-area: image;
+    transform: rotate(-3deg);
+    box-shadow: 2px 2px 4px rgba(0, 0,5);
+}
+
+.content {
+    grid-area: content;
+    display: inline-block;
+    transform: rotate(-3deg);
+}
+
+.some {
+    grid-area: some;
+    transform: rotate(-3deg);
+}
+
+.button {
+    grid-area: button;
+    transform: rotate(-3deg);
+}
+
+.continue-search {
+    grid-area: search;
+    transform: rotate(-3deg);
+}
+
+
+h2 {
+    font-family: 'anek tamil', 'sans serif';
+    font-size: 20px;
+    color: white;
+}
+
+h3 {
+    font-family: 'anek tamil', 'sans serif';
+    font-size: 24px;
+    color: black;
+}
+
+p {
+    font-family: 'anek tamil', 'sans serif';
+    font-size: 16px;
+    color: white;
+}
+
+img {
+    max-width: 100px;
+}
+
+.watchnow-button {
+    font-size: 26px;
+    font-family: 'anek tamil', 'sans serif';
+    background-color: #d69b28;
+    border-color: #543f17;
+    border-radius: 1em;
+    padding: 2px 6px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+

@@ -1,0 +1,98 @@
+body {
+    background-color: black;
+    margin: 0px;
+}
+
+.logo {
+    max-width: 10%;
+}
+
+.top-nav {
+    margin-top: -50px;
+}
+
+.top-nav li {
+    display: inline;
+    float: right;
+}
+
+.top-nav a {
+    color: white;
+    text-decoration: none;        
+    padding: 30px;
+}
+
+.top-nav a:hover {
+    color: #c4c3c3;
+}
+
+.current {
+    font-weight: bold;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: auto 1fr 1fr auto;
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'bakbak one', cursive;
+    font-size: 35px;
+    color: white;
+}
+
+p {
+    font-family: 'anek tamil' 'sans serif';
+    font-size: 25px;
+    color: white;
+}
+
+.nav-container {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-container {
+    width: 70%;
+    padding: 60px;
+    line-height: 40px;
+}
+
+.nav-container ul {
+    list-style-type: none;
+}
+
+
+main {
+    margin-left: 20%;
+    margin-top: 10%;
+    margin-right: 20%;
+}
+
+.movie1 {
+    max-width: 30%;
+}
+
+.movie2 {
+    max-width: 30%;
+}
+
+.movie3 {
+    max-width: 30%;
+}
+
+h2, h3, h4, h5 {
+    font-size: 15px;
+    font-family: 'anek tamil', 'sans serif';
+    color: white;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding: 40px;
+}

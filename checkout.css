@@ -1,0 +1,159 @@
+body {
+    background-image: url('images/backround\ buy\ chechout.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.logo {
+    max-width: 10%;
+}
+
+.top-nav {
+    margin-top: -50px;
+}
+
+.top-nav li {
+    display: inline;
+    float: right;
+}
+
+.top-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 30px;
+}
+
+.top-nav a:hover {
+    color: #c4c3c3;
+}
+
+h1 {
+    color: white;
+    font-family: 'bakbak one', cursive;
+    font-size: 30px;
+}
+
+main {
+    margin-left: 200px;
+    margin-top: 70px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1px;
+    padding: 1px;
+    width: 65%;
+}
+
+.image {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.content {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.spidermanposter {
+    width: 40%;
+    height: auto;
+    justify-self: center;
+    margin-top: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    display: flex;
+}
+
+.buyforinput, .rentforinput {
+    color: #d69b28;
+    font-family: 'bakbak one', cursive;
+    font-size: 26px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+p {
+    color: white;
+    font-family: 'anek tamil', 'sans serif';
+    font-size: 15px;
+}
+
+.purchaseinput {
+    font-size: 26px;
+    font-family: 'anek tamil', 'sans serif';
+    background-color: #d69b28;
+    border-color: #543f17;
+    border-radius: 1em;
+    padding: 2px 6px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.purchaseinput a {
+    text-decoration: none;
+    color: black;
+}
+
+.button {
+    grid-column: 2/3;
+    grid-row: 2/2;
+    margin: 150px;
+}    
+
+.purchaseinput:hover {
+    background-color: #ebbe5e;
+}
+
+input[type="checkbox"] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 70%;
+    margin-top: 10px;
+    min-height: 10px;
+    min-width: 10px;
+    color: #d69b28; 
+}
+
+.bottom-nav,
+#menu-checkbox {
+    display: none;
+    cursor: pointer;
+}
+
+#menu-checkbox:checked ~ .bottom-nav {
+    display: block;
+}
+
+.bottom-nav a {
+    display: block;
+    padding: 10px;
+    color: white;
+    font-family: 'anek tamil', 'sans serif';
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.bottom-nav a:hover {
+    color: #c4c3c3;
+}
+
+.fa-solid {
+    color: white;
+    font-family: 'anek tamil', 'sans serif';
+    font-size: 13px;
+}
+
+.paymentmethod {
+    grid-column: 2/3;
+    grid-row: 2/2;
+    margin: 30px;
+}
+
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout prosess</title>
+    <meta name="description" content="The checkout prosess page to Square eyes website" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="checkout.css" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Tamil&family=Bakbak+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/348dd23869.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="images/SquareEyes_Logo.png" alt="Logo for this page" class="logo"/></a>
+        <nav class="top-nav">
+            <ul>
+                <li><a href="login.html">Log in</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="shoppingbag.html">Shopping bag</a></li>
+                <li><a href="searchbar.html">Search bar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <main class="container"> 
+
+        <div class="image">
+            <img src="images/spidermanposter.jpg" class="spidermanposter"/>
+        </div>
+
+        <div class="content">
+            <h1>Spiderman 2</h1>
+
+            <form>
+            <input type="checkbox" id="buy for 15$" name="buy for 15$" value="buy for 15$" class="checks">
+            <label for="buy for 15$" class="buyforinput">Buy for 15$</label>
+
+            <p>Watch the movie whenever you want, as many times as you want</p>
+
+            <input type="checkbox" id="rent for 5$" name="rent for 5$" value="rent for 5$" class="checks">
+            <label for="rent for 5$" class="rentforinput">Rent for 5$</label>
+
+            <p>Watch the movie as many times as you want for the next 24 hours.</p>
+            </form>
+        </div>
+
+        <div class="paymentmethod">
+            <input type="checkbox" id="menu-checkbox">
+            <label for="menu-checkbox"><i class="fa-solid fa-angle-down"> Payment method</i></label>
+            
+            <nav class="bottom-nav">
+                <a>Visa / Debet / Credit</a>
+                <a>Paypal</a>
+            </nav>
+        </div>
+
+        <div class="button">
+            <button class="purchaseinput" type="purchase"><a href="payment.html">Purchase</a></button>
+        </div>
+       
+    </main>
+</body>
+</html>
