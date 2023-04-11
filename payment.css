@@ -10,6 +10,12 @@ body {
     max-width: 10%;
 }
 
+.fa-solid {
+    color: white;
+    margin-left: 50px;
+    margin-top: -50px;
+}
+
 nav {
     margin-top: -50px;
 }
@@ -20,6 +26,7 @@ nav li {
 }
 
 nav a {
+    font-family: 'anek tamil', 'sans serif';
     color: white;
     text-decoration: none;        
     padding: 30px;
@@ -87,8 +94,8 @@ input [type="text"] {
     font-size: 26px;
     background-color: #d69b28;
     border-color: #543f17;
-    border-radius: 2em;
-    padding: 6px 17px;
+    border-radius: 1em;
+    padding: 2px 6px;
     margin-top: 1em;
     cursor: pointer;
 }

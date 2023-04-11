@@ -17,6 +17,7 @@ nav li {
 }
 
 nav a {
+    font-family: 'anek tamil', 'sans serif';
     color: white;
     text-decoration: none;
     padding: 30px;
@@ -64,6 +65,7 @@ h1 {
 }
 
 .getstartedbutton {
+    font-family: 'anek tamil', 'sans serif';
     font-size: 37px;
     background-color: #d69b28;
     border-color: #543f17;
@@ -141,4 +143,8 @@ footer {
     font-family: 'anek tamil', 'sans serif';
     color: white;
     font-size: 12px;
+}
+
+footer i {
+    margin-inline-end: 20px;
 }

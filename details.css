@@ -10,6 +10,12 @@ img{
     max-width: 10%;
 }
 
+.fa-solid {
+    color: white;
+    margin-left: 50px;
+    margin-top: -50px;
+}
+
 nav {
     margin-top: -50px;
 }
@@ -20,6 +26,7 @@ nav li {
 }
 
 nav a {
+    font-family: 'anek tamil', 'sans serif';
     color: white;
     text-decoration: none;
     padding: 30px;
@@ -54,7 +61,7 @@ form {grid-area: form;}
 
 h1 {
     color: white;
-    font-family: 'bakbak one' cursive;
+    font-family: 'bakbak one', cursive;
     font-size: 35px;
     grid-area: h1;
     margin: 1;
@@ -84,6 +91,7 @@ p {
 }
 
 .addtochartinput {
+    font-family: 'anek tamil', 'sans serif';
     font-size: 26px;
     background-color: #d69b28;
     border-color: #543f17;

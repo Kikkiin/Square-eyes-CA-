@@ -18,6 +18,7 @@ nav li {
 }
 
 nav a {
+    font-family: 'anek tamil', 'sans serif';
     color: white;
     text-decoration: none;        
     padding: 30px;
@@ -167,4 +168,8 @@ footer {
     font-size: 12px;
     position: fixed;
     bottom: 0;
+}
+
+footer i {
+    margin-inline-end: 20px;
 }

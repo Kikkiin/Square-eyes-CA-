@@ -6,6 +6,12 @@ img{
     max-width: 10%;
 }
 
+.fa-solid {
+    color: white;
+    margin-left: 50px;
+    margin-top: -50px;
+}
+
 nav {
     margin-top: -50px;
 }
@@ -16,6 +22,7 @@ nav li {
 }
 
 nav a {
+    font-family: 'anek tamil', 'sans serif';
     color: white;
     text-decoration: none;
     padding: 30px;
@@ -80,13 +87,13 @@ h1 {
 
 h3 {
     color: white;
-    font-family: 'anek tamil' 'sans serif';
+    font-family: 'anek tamil', 'sans serif';
     font-size: 15px;
 }
 
 h4 {
     color: white;
-    font-family: 'anek tamil' 'sans serif';
+    font-family: 'anek tamil', 'sans serif';
     font-size: 15px;
 }
 

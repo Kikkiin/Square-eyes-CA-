@@ -17,6 +17,7 @@ body {
 }
 
 .top-nav a {
+    font-family: 'anek tamil', 'sans serif';
     color: white;
     text-decoration: none;        
     padding: 30px;
@@ -44,12 +45,13 @@ h1 {
 }
 
 p {
-    font-family: 'anek tamil' 'sans serif';
+    font-family: 'anek tamil', 'sans serif';
     font-size: 25px;
     color: white;
 }
 
 .nav-container {
+    font-family: 'anek tamil', 'sans serif';
     color: white;
     display: flex;
     justify-content: space-between;
@@ -84,15 +86,31 @@ main {
     max-width: 30%;
 }
 
-h2, h3, h4, h5 {
+h2 {
     font-size: 15px;
     font-family: 'anek tamil', 'sans serif';
     color: white;
 }
 
+
 footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 20px;
-    padding: 40px;
+    padding-top: 100px;
+    font-family: 'anek tamil', 'sans serif';
+    color: white;
+    font-size: 12px;
+}
+
+
+.footer-details {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-details h2 {
+    padding: 50px;
+}
+
+footer i {
+    margin-inline-end: 10px;
+    color: white;
 }
