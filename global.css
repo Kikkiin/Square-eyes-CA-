@@ -70,6 +70,8 @@ nav a:hover {
     border-radius: 2em;
     padding: 4px 14px;           /*borders from the text to the outerlines of the frame*/
     text-decoration: none;        /*removes the default color/underlines ect on the link*/ 
+    transition-property: backround-color;
+    transition-duration: 1s;
 }
 
 .button:hover {

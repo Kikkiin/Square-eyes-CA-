@@ -59,3 +59,15 @@ input [type="text"] {
     justify-content: center;
     align-items: center;
 }
+
+
+
+/*Styles for phone*/
+
+@media only screen and (max-width: 600px) {
+    
+    fieldset {
+        width: 150px;
+    }
+
+}
