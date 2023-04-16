@@ -54,4 +54,5 @@ h2 {
     .movie1, .movie2, .movie3 {
         max-width: 200px;
         margin: 5px;
+    }
 }

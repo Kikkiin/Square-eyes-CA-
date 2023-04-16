@@ -42,7 +42,7 @@ body{
 @media only screen and (max-width: 600px) {
     
     body {
-        background-size: 330%;
+        background-size: 335%;
         background-position: center center;
         overflow: hidden;
     }

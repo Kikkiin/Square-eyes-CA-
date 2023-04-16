@@ -26,10 +26,6 @@ body {
     margin: 70px;
 }
 
-h1 {
-    /*should i make one size to fit all h1, except the home page?*/
-}
-
 h2 {
     font-size: 16px;
 }
@@ -82,16 +78,12 @@ h3 {
     .spidermanposter {
         width: 250px;
         margin-top: 20px;
-        margin-left: 50%;
+        margin-left: 30%;
     }
 
     .button {
-        margin-left: 200px;
+        margin-left: 150px;
     }
-
-    /*make more space after the button when phone size???*/
-
-
 }
 
 
@@ -111,7 +103,4 @@ h3 {
     .spidermanposter {
         width: 180px;
     }
-
-}
-
 }

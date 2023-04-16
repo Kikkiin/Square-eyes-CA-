@@ -50,10 +50,6 @@ h3 {
         margin-top: -100px;
     }
 
-    nav a {
-        padding: 5px;
-    }
-
     h1 {
         font-size: 20px;
     }
@@ -66,11 +62,16 @@ h3 {
     h3 {
         font-size: 16px;
     }
+
+    .movies-top-rated img, .movies-trending img {
+        width: 50%;
+    }
 }
+
 
 /* Styles for tablets*/
 
-@media only screen and (min-width:601px) and (max-width:1200px) {
+@media only screen and (min-width:601px) and (max-width:900px) {
     .spiderbackround1 {
         width: 300px;
         margin-top: -100px;

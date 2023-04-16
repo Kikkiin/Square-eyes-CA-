@@ -8,19 +8,9 @@ h1, h2 {
 }
 
 .button {
-    font-family: 'anek tamil', 'sans serif';
-    background-color: #d69b28;  /*styles for my link, makes it look like a buttton*/
-    border-color: #543f17;
-    color: black;               /*color of the text*/
     font-size: 37px;
-    border-radius: 2em;
     padding: 10px 20px;           /*borders from the text to the outerlines of the frame*/
-    text-decoration: none;        /*removes the default color/underlines ect on the link*/
     margin-left: 120px;           /*moves the link more to the left inside the section*/
-}
-
-.button:hover {
-    background-color: #ebbe5e;  /*changes the color when the mouse is over the link*/
 }
 
 .cover2 {
@@ -39,7 +29,7 @@ h1, h2 {
 }
 
 .cover4, .cover5, .cover6, .cover7 {
-    max-width: 250px;      /*by default the margin around the pictures tend to be quite big, så you can change thsi to me 0 if the images get small*/
+    max-width: 250px;           /*by default the margin around the pictures tend to be quite big, så you can change thsi to me 0 if the images get small*/
 }
 
 p {
@@ -52,18 +42,6 @@ p {
 /* Styles for phones*/
 
 @media only screen and (max-width: 600px) {
-
-    .logo {
-        max-width: 20%;
-    }
-
-    nav {
-        margin-top: 0;
-    }
-
-    nav a {
-        padding: 5px;
-    }
 
     .home-intro {
         flex-direction: column;
@@ -109,14 +87,6 @@ p {
 /* Styles for tablets*/
 
 @media only screen and (min-width:601px) and (max-width:900px) {
-
-    .logo {
-        max-width: 20%;
-    }
-
-    nav a {
-        padding: 20px;
-    }
 
     .cover2 {
         max-width: 400px;
