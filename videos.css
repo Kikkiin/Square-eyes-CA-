@@ -64,14 +64,22 @@ h3 {
     }
 
     .movies-top-rated, .movies-trending {
-        display: flex;
-        overflow-x: scroll;
+        display: flex; 
+        overflow-x: scroll;              /*this shows my images in a carusell on mobile devices*/
         scroll-snap-type: x mandatory;
+        width: 80%;
+        height: 400px;
+        max-width: 100%;
+        min-height: 100%;
     }
 
     .movies-top-rated img, .movies-trending img {
         flex: 0 0 100%;
         scroll-snap-align: start;
+        width: 80%;                     /*the image is using 80% of the carusell container*/
+        height: auto;
+        max-width: 100%;                /*so the images dont strecth out of proprsions*/
+        max-height: 100%;
     }
 }
 

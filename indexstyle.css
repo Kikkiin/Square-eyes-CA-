@@ -65,7 +65,7 @@ p {
     }
 
     .cover2 {
-        max-width: 450px;
+        max-width: 400px;
     }
 
     .home-continue {
@@ -74,7 +74,8 @@ p {
     }
 
     .cover4, .cover5, .cover6, .cover7 {
-        max-width: 110px;
+        max-width: 100px;
+        padding: 5px;
     }
 
     p {
