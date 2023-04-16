@@ -51,7 +51,7 @@ h3 {
     }
 
     h1 {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .click-here {
@@ -63,8 +63,15 @@ h3 {
         font-size: 16px;
     }
 
+    .movies-top-rated, .movies-trending {
+        display: flex;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+    }
+
     .movies-top-rated img, .movies-trending img {
-        width: 50%;
+        flex: 0 0 100%;
+        scroll-snap-align: start;
     }
 }
 
