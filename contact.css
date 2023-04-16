@@ -4,48 +4,17 @@ body {
     background-repeat: no-repeat;
 }
 
-.logo {
-    max-width: 10%;
-}
-
-nav {
-    margin-top: -50px;
-}
-
-nav li {
-    display: inline;
-    float: right;
-}
-
-nav a {
-    font-family: 'anek tamil', 'sans serif';
-    color: white;
-    text-decoration: none;        
-    padding: 30px;
-}
-
-nav a:hover {
-    color: #c4c3c3;
-}
-
-.current {
-    font-weight: bold;
-}
-
-h1 {
-    font-family: 'bakbak one', cursive;
-    font-size: 35px;
-    color: white;
+.contact-fieldset, h1 {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin-bottom: 100px;
+    align-items: center;
 }
 
 main {
     max-width: 800px;
     margin: 0 auto;
 }
-
 
 .contact-fieldset {
     display: block;
@@ -65,16 +34,15 @@ main {
 
 .email-nav,
 #email-checkbox {
-    display: none;
+    display: none;              /*hide the checkbox*/
 }
 
 input [type="text"] {
     background-color: black;
     color: white;
-
 }
 
-#email-checkbox:checked ~ .email-nav {
+#email-checkbox:checked ~ .email-nav {     /*show the nav menu when checkbox is checked*/
     display: block;
 }
 
@@ -106,7 +74,6 @@ input [type="text"] {
     padding: 2px;
 }
 
-
 .number,
 #call-checkbox {
     display: none;
@@ -131,7 +98,6 @@ input [type="text"] {
     font-family: 'anek tamil', 'sans serif';
     font-size: 20px;
 }
-
 
 .chat-nav,
 #chat-checkbox {
@@ -162,14 +128,21 @@ input [type="text"] {
     height: 200px;
 }
 
-footer {
-    font-family: 'anek tamil', 'sans serif';
-    color: white;
-    font-size: 12px;
-    position: fixed;
-    bottom: 0;
-}
 
-footer i {
-    margin-inline-end: 20px;
+/* Style for phones */
+
+@media only screen and (max-width: 600px) {
+    
+    .contact-fieldset {
+        width: 15rem;
+        height: 11rem;
+        padding: 10px;
+        line-height: 60px;
+        font-size: 20px;
+    }
+
+    .email-nav, .number, .chat-nav {
+        top: 13rem;
+        left: 0;
+    }
 }

@@ -1,116 +1,57 @@
-body {
-    background-color: black;
-    margin: 0px;
-}
-
-.logo {
-    max-width: 10%;
-}
-
-.top-nav {
-    margin-top: -50px;
-}
-
-.top-nav li {
-    display: inline;
-    float: right;
-}
-
-.top-nav a {
-    font-family: 'anek tamil', 'sans serif';
-    color: white;
-    text-decoration: none;        
-    padding: 30px;
-}
-
-.top-nav a:hover {
-    color: #c4c3c3;
-}
-
-.current {
-    font-weight: bold;
-}
-
-.container {
-    display: grid;
-    grid-template-rows: auto 1fr 1fr auto;
-    grid-gap: 20px;
-    padding: 20px;
-}
-
-h1 {
-    font-family: 'bakbak one', cursive;
-    font-size: 35px;
-    color: white;
-}
-
-p {
-    font-family: 'anek tamil', 'sans serif';
-    font-size: 25px;
-    color: white;
-}
-
-.nav-container {
-    font-family: 'anek tamil', 'sans serif';
-    color: white;
+.about-info, .about-figure {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 120px;
 }
 
-.nav-container {
-    width: 70%;
-    padding: 60px;
-    line-height: 40px;
+.about-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 120px;
 }
 
-.nav-container ul {
-    list-style-type: none;
+.movie1, .movie2, .movie3 {
+    max-width: 250px;
+    margin: 20px;
 }
-
-
-main {
-    margin-left: 20%;
-    margin-top: 10%;
-    margin-right: 20%;
-}
-
-.movie1 {
-    max-width: 30%;
-}
-
-.movie2 {
-    max-width: 30%;
-}
-
-.movie3 {
-    max-width: 30%;
-}
-
-h2 {
-    font-size: 15px;
-    font-family: 'anek tamil', 'sans serif';
-    color: white;
-}
-
-
-footer {
-    padding-top: 100px;
-    font-family: 'anek tamil', 'sans serif';
-    color: white;
-    font-size: 12px;
-}
-
 
 .footer-details {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.footer-details h2 {
-    padding: 50px;
+h2 {
+    font-size: 14px;
 }
 
-footer i {
-    margin-inline-end: 10px;
-    color: white;
+
+
+/*Styles for phone*/
+
+@media only screen and (max-width: 600px) {
+
+    .about-container {
+        flex-direction: column;
+        margin: 100px;
+    }
+
+    .movie1, .movie2, .movie3 {
+        max-width: 100px;
+        margin: 5px;
+    }
+}
+
+
+/* Styles for tablets*/
+
+@media only screen and (min-width:601px) and (max-width:900px) {
+    
+    .movie1, .movie2, .movie3 {
+        max-width: 200px;
+        margin: 5px;
 }

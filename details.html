@@ -7,6 +7,7 @@
     <title>Details of the product</title>
     <meta name="description" content="The details of the product page to Square eyes website" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="global.css" rel="stylesheet">
     <link href="details.css" rel="stylesheet"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +21,7 @@
     <header>
         <a href="index.html"><img src="images/SquareEyes_Logo.png" alt="Logo for this page" class="logo"/></a>
 
-        <i class="fa-solid fa-angle-left"></i>
+        <a href="videos.html"><i class="fa-solid fa-angle-left"></i></a> 
 
         <nav>
             <ul>
@@ -34,37 +35,61 @@
     </header>
 
     <main>
-        <h1>Spiderman 2</h1>
-        <h2>2004 Action/Adventure 2 h & 7 min Reviews</h2>
-        <p>Peter Parker, the student who developed supernatural strength and the ability to climb any surface, is back. Peter still uses his powers to fight crime, but his personal life has not been easy. Should he give up his life as a superhero and be with his true love instead?</p>
-        
-        <form>
+        <section class="movie-intro">
             <div>
-                <button type="add to chart" class="addtochartinput"><a href="checkout.html">Add to chart</a></button>
-            </div>    
-        </form>
+                <h1>Spiderman 2</h1>
+                <h2>2004 Action/Adventure 2 h & 7 min Reviews</h2>
+                <p class="paragraph-one">Peter Parker, the student who developed supernatural strength and the ability to climb any surface, is back. Peter still uses his powers to fight crime, but his personal life has not been easy. Should he give up his life as a superhero and be with his true love instead?</p>
 
-        <img src="images/spidermanposter.jpg" class="spidermanposter"/>
+                <a href="checkout.html" class="button">Add to chart</a>
+            </div> 
+
+            <figure class="poster-container">
+                <img src="images/spidermanposter.jpg" class="spidermanposter" alt="spiderman movie poster"/>
+            </figure>
+
+        </section>
+   
         
-        <section class="starring">
-            <h3>Starring</h3>
-            <img src="images/tobey-maguire.png" class="tobey"/>
-            <img src="images/kirsten-dunst.png" class="kirsten"/>
-            <img src="images/james-franco.png" class="james"/>
-            <img src="images/alfred-molina.png" class="alfred"/>
-        </div>
+        <section class="movie-details">
 
-        <section class="info">
-            <h4>Sound</h4>
-            <p2>English</p2>
-            <h5>Subtitles</h5>
-            <p2>English, Norwegian, Swedish, Danish</p2>
-            <h6>Directed by</h6>
-            <p2>Sam Raidi</p2>
-            <img src="images/sam-raimi.png"/>
+            <h3>Starring</h3>
+
+            <div class="starring-images">
+                <figure>
+                    <img src="images/tobey-maguire.png" class="tobey" alt="starring tobey"/>
+                </figure>
+                <figure>
+                      <img src="images/kirsten-dunst.png" class="kirsten" alt="starring kirsten"/>
+                </figure>
+                <figure>
+                    <img src="images/james-franco.png" class="james" alt="starring james"/>
+                </figure>
+                <figure>
+                    <img src="images/alfred-molina.png" class="alfred" alt="starring alfred"/>
+                </figure>    
+            </div>
+
+            <h3>Sound</h3>
+            <p>English</p>
+            <h3>Subtitles</h3>
+            <p>English, Norwegian, Swedish, Danish</p>
+            <h3>Directed by</h3>
+            <p>Sam Raidi</p>
+
+            <div class="director-image">
+                <figure>
+                   <img src="images/sam-raimi.png" class="raimi" alt="director raimi"/>
+                </figure>
+            </div>
+        
         </section>
 
     </main>
+
+    <footer>
+        <i class="fa-brands fa-facebook"></i><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-twitter"></i> Copyright &copy; Square eyes 2023
+    </footer>
 
 </body>
 </html>

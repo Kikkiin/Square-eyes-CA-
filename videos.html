@@ -7,6 +7,7 @@
     <title>List of videos</title>
     <meta name="description" content="The list of videos page to Square eyes website" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="global.css" rel="stylesheet">
     <link href="videos.css" rel="stylesheet"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +21,7 @@
     <header>
         <a href="index.html"><img src="images/SquareEyes_Logo.png" alt="Logo for this page" class="logo"/></a>
 
-        <i class="fa-solid fa-angle-left"></i>
+        <a href="login.html"><i class="fa-solid fa-angle-left"></i></a> 
         
         <nav>
             <ul>
@@ -33,38 +34,46 @@
         </nav>
     </header>
     <main>
-        <h1>Stream spiderman now</h1>
+        <section class="videos-intro">
+             <div>
+                <h1>Stream spiderman now</h1>
+                <a href="details.html" class="click-here">Click here</a>
+             </div>
 
-        <div class="button">
-            <button type="click here" class="buttonclick"><a href="details.html">Click here</a></button> 
-        </div>
-
-
-        <img src="images/spidermanlistofv.jpg" class="spiderbackround1" />
-
+             <figure class="backround">
+                 <img src="images/spidermanlistofv.jpg" class="spiderbackround1" alt="spiderman backround picture"/>
+             </figure>        
+        </section>
 
         <section class="movies1">
             <h3>Top rated</h3>
-            <img src="images/SpiritedAway.jpg" class="cover1"/>
-            <img src="images/TheDarkKnight.jpg" class="cover2"/>
-            <img src="images/ToyStory.jpeg" class="cover3"/>
-            <img src="images/Hollywood.jpeg" class="cover4"/>
-            <img src="images/ScaryMovie.jpg" class="cover5"/>
-            <img src="images/ItsaSummer.jpg" class="cover6"/>
-            <img src="images/Jaws.jpg" class="cover7"/>
+            <figure class="movies-top-rated">
+                <img src="images/SpiritedAway.jpg" class="cover1" alt="movie poster spirited away"/>
+                <img src="images/TheDarkKnight.jpg" class="cover2" alt="movie poster the dark night"/>
+                <img src="images/ToyStory.jpeg" class="cover3" alt="movie poster toy story"/>
+                <img src="images/Hollywood.jpeg" class="cover4" alt="movie poster hollywood"/>
+                <img src="images/ScaryMovie.jpg" class="cover5" alt="movie poster scary movie"/>
+                <img src="images/ItsaSummer.jpg" class="cover6" alt="movie poster its a summer"/>
+                <img src="images/Jaws.jpg" class="cover7" alt="movie poster jaws"/>
+            </figure>
         </section>
 
         <section class="movies2">
-            <h4>Trending</h4>
-            <img src="images/MeanGirls.jpg" class="cover8"/>
-            <img src="images/Titanic.jpg" class="cover9"/>
-            <img src="images/Untouchables.jpg" class="cover10"/>
-            <img src="images/LesMiserables.png" class="cover11"/>
-            <img src="images/Shawshank.jpg" class="cover12"/>
-            <img src="images/CityofGod.jpg" class="cover13"/>
-            <img src="images/ForestGump.jpg" class="cover14"/>
+            <h3>Trending</h3>
+            <figure class="movies-trending">
+                <img src="images/MeanGirls.jpg" class="cover8"/>
+                <img src="images/Titanic.jpg" class="cover9"/>
+                <img src="images/Untouchables.jpg" class="cover10"/>
+                <img src="images/LesMiserables.png" class="cover11"/>
+                <img src="images/Shawshank.jpg" class="cover12"/>
+                <img src="images/CityofGod.jpg" class="cover13"/>
+                <img src="images/ForestGump.jpg" class="cover14"/>
+            </figure>
         </section>
 
     </main>
+    <footer>
+        <i class="fa-brands fa-facebook"></i><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-twitter"></i> Copyright &copy; Square eyes 2023
+    </footer>
 </body>
 </html>

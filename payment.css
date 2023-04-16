@@ -6,39 +6,9 @@ body {
     background-attachment: fixed;
 }
 
-.logo {
-    max-width: 10%;
-}
-
-.fa-solid {
-    color: white;
-    margin-left: 50px;
-    margin-top: -50px;
-}
-
-nav {
-    margin-top: -50px;
-}
-
-nav li {
-    display: inline;
-    float: right;
-}
-
-nav a {
-    font-family: 'anek tamil', 'sans serif';
-    color: white;
-    text-decoration: none;        
-    padding: 30px;
-}
-
-nav a:hover {
-    color: #c4c3c3;
-}
-
 .container {
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
     grid-gap: 10px;
     min-height: 70vh;
@@ -84,28 +54,8 @@ input [type="text"] {
     color: white;
 }
 
-.button {
+.button-container {
     display: flex;
     justify-content: center;
     align-items: center;
-
-}
-.purchaseinput {
-    font-size: 26px;
-    background-color: #d69b28;
-    border-color: #543f17;
-    border-radius: 1em;
-    padding: 2px 6px;
-    margin-top: 1em;
-    cursor: pointer;
-}
-
-.purchaseinput a {
-    text-decoration: none;
-    color: black;
-    font-family: 'anek tamil', 'sans serfif';
-}
-
-.signininput:hover {
-    background-color: #ebbe5e;
 }

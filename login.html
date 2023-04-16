@@ -7,6 +7,7 @@
     <title>Log in</title>
     <meta name="description" content="The log in page to Square eyes website" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="global.css" rel="stylesheet">
     <link href="loginstyle.css" rel="stylesheet"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,12 +21,12 @@
     <header>
         <a href="index.html"><img src="images/SquareEyes_Logo.png" alt="Logo for this page" class="logo"/></a>
 
-        <i class="fa-solid fa-angle-left"></i>
+        <a href="index.html"><i class="fa-solid fa-angle-left"></i></a>
         
     </header>
     <main>
         <h1>Log in</h1>
-        <form>
+        <form class="form-details">
             <label for="email" class="emailinput">Email</label> 
             <input type="text" name="email" id="email" class="forminput">
 
@@ -39,11 +40,12 @@
             <label for="create an account" class="createaccountinput">Create an account</label>
 
             <div>
-                <button type="sign in" class="signininput"><a href="videos.html">Sign in</a></button>
+                <a href="videos.html" class="button">Sign in</a>
             </div>
-
         </form>
-
     </main>
+    <footer>
+        <i class="fa-brands fa-facebook"></i><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-twitter"></i> Copyright &copy; Square eyes 2023
+    </footer>
 </body>
 </html>

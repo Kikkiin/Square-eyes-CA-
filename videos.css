@@ -1,106 +1,82 @@
-body {
-    background-color: black;
-}
-
-img{
-    max-width: 10%;
-}
-
-.fa-solid {
-    color: white;
-    margin-left: 50px;
-    margin-top: -50px;
-}
-
-nav {
-    margin-top: -50px;
-}
-
-nav li {
-    display: inline;
-    float: right;
-}
+.videos-intro {
+    display: flex;
+    margin-top: 100px;
+    line-height: 90px;            /*the space bewteen the text*/
+}   
 
 nav a {
-    font-family: 'anek tamil', 'sans serif';
-    color: white;
-    text-decoration: none;
-    padding: 30px;
-}
-
-nav a:hover {
-    color: #c4c3c3;
-}
-
-main {
-    display: grid;
-    width: 100%;
-    grid-gap: 1px;
-    grid-template-areas: 
-    'h1 . spiderbackround1'
-    'button button spiderbackround1'
-    'movies1 movies1 movies1'
-    'movies2 movies2 movies2';
-}
-
-h1 {grid-area: h1;}
-.button {grid-area: button;}
-.spiderbackround1 {grid-area: spiderbackround1;}
-.movies1 {grid-area: movies1;}
-.movies2 {grid-area: movies2;}
-
-h1 {
-    color: white;
-    font-family: 'bakbak one', cursive;
-    font-size: 40px;
-    padding: 50px;
-}
-
-.button {
-    background-color: black;
-    border: none;
-    padding: 0;
-    margin: 0;
-    outline: none;
-    display: inline-block;
-}
-
-.button a {
-    text-decoration: none;
-    color: #d69b28;
-    background-color: black;
-    font-family: 'bakbak one', cursive;
-    font-size: 38px;
-    border: none;
-    padding: 0;
-    margin: 0;  
-    outline: none;
-
+    padding: 10px;                /*since the spiderman backround picture is moved closer to the top, i adjustet the padding in the nav bar*/
 }
 
 .spiderbackround1 {
-    max-width: 40%;
-    margin-bottom: 2px;
-    position: relative;
-    z-index: 1;
+    width: 400px;
+    margin-top: -180px;
+}
+
+.click-here {
+    font-family: 'bakbak one', cursive;
+    font-size: 38px;
+    color: #d69b28;
+    text-decoration: none;
+    margin: 70px;
+}
+
+.click-here:hover {
+    color: #ebbe5e; ;
 }
 
 h3 {
-    color: white;
-    font-family: 'anek tamil', 'sans serif';
-    font-size: 15px;
+    font-size: 20px;
 }
 
-h4 {
-    color: white;
-    font-family: 'anek tamil', 'sans serif';
-    font-size: 15px;
-}
-
-section {
-    padding: 50px;
+.movies-top-rated, .movies-trending {
     display: flex;
-    justify-content: space-between;
-    position: relative;
-    z-index: 2;
+    justify-content: space-between;      /*the images will be evenly inside the flexbox*/
+    gap: 30px;                          /*every images will have a gap of 30px bewteen them*/
+}
+
+.movies-top-rated img, .movies-trending img {
+    width: 100%;                        /*this change the image size by taking up as much space in the flexbox as it can together*/
+    height: auto;
+}
+
+
+/*Styles for phone*/
+
+@media only screen and (max-width: 600px) {
+
+    .spiderbackround1 {
+        width: 200px;
+        margin-top: -100px;
+    }
+
+    nav a {
+        padding: 5px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .click-here {
+        font-size: 28px;
+        margin: 50px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+}
+
+/* Styles for tablets*/
+
+@media only screen and (min-width:601px) and (max-width:1200px) {
+    .spiderbackround1 {
+        width: 300px;
+        margin-top: -100px;
+    }
+
+    nav a {
+        padding: 10px;
+    }
 }

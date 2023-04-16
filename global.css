@@ -1,0 +1,145 @@
+body {
+    background-color: black;
+}
+
+main {
+    max-width: 1000px;                   /*max-width of the element*/
+    margin: 0 auto;                      /*center the element on the page*/
+}
+
+header {
+    margin-bottom: 50px;
+
+}
+
+h1, h2 {
+    font-family: 'bakbak one', cursive;
+    color: white;
+    font-size: 30px;
+}
+
+h3 {
+    font-family: 'bakbak one', cursive;
+    color: white;
+    font-size: 20px;
+}
+
+p {
+    font-family: 'anek tamil', sans-serif;
+    color: white;
+}
+
+.logo {
+    max-width: 15%;
+}
+
+.fa-solid {
+    color: white;
+    margin-left: 50px;
+    margin-top: -50px;
+}
+
+nav {
+    display: flex; 
+    justify-content: flex-end;        /*moves the content to the right*/
+    margin-top: -90px;
+}
+
+nav li {
+    display: inline-block;             /*shows the list horizontal*/
+    margin-left: 5px;
+}
+
+nav a {
+    font-family: 'anek tamil', 'sans serif';
+    color: white;
+    text-decoration: none;
+    padding: 30px;
+}
+
+nav a:hover {
+    color: #c4c3c3;
+}
+
+.button {
+    font-family: 'anek tamil', 'sans serif';
+    background-color: #d69b28;  /*styles for my link, makes it look like a buttton*/
+    border-color: #543f17;
+    color: black;               /*color of the text*/
+    font-size: 26px;
+    border-radius: 2em;
+    padding: 4px 14px;           /*borders from the text to the outerlines of the frame*/
+    text-decoration: none;        /*removes the default color/underlines ect on the link*/ 
+}
+
+.button:hover {
+    background-color: #ebbe5e;  /*changes the color when the mouse is over the link*/
+}
+
+figure {
+    margin: 0px;
+}
+
+.current {
+    font-weight: bold;
+}
+
+footer {
+    font-family: 'anek tamil', 'sans serif';
+    color: white;
+    font-size: 12px;    
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+footer i {
+    padding: 10px;
+}
+
+
+
+
+
+
+
+/* Styles for phones*/
+
+@media only screen and (max-width: 600px) {
+
+    .logo {
+        max-width: 20%;
+    }
+
+    nav {
+        margin-top: 2px;
+    }
+
+    nav a {
+        padding: 5px;
+    }
+
+    .button {
+        font-size: 20px;
+        padding: 5px 11px;
+    }
+
+
+}
+
+
+
+
+/* Styles for tablets*/
+
+@media only screen and (min-width:601px) and (max-width:900px) {
+
+    .logo {
+        max-width: 20%;
+    }
+
+    nav a {
+        padding: 20px;
+    }
+
+}

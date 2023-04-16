@@ -7,6 +7,7 @@
     <title>Checkout success</title>
     <meta name="description" content="The checkout success page to Square eyes website" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="global.css" rel="stylesheet">
     <link href="success.css" rel="stylesheet"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,11 +21,11 @@
     <header>
         <a href="index.html"><img src="images/SquareEyes_Logo.png" alt="Logo for this page" class="logo"/></a>
 
-        <i class="fa-solid fa-angle-left"></i>
+        <a href="payment.html"><i class="fa-solid fa-angle-left"></i></a> 
 
         <nav>
             <ul>
-                <li><a href="login.html">Log in</a></li>
+                <li><a href="login.html">Hi Kristin</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="shoppingbag.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
@@ -33,31 +34,35 @@
         </nav>
     </header>
     <main>
-        <div class="header">
-            <h1>Thank you for your purchase</h1>
-        </div>
+        <section class="purchase-details">
+            <figure class="poster-container">
+                 <img src="images/spidermanposter.jpg" class="spidermanposter" alt="spiderman movie poster"/>
+            </figure>   
+            
+            <div class="details">
+                <h1>Thank you for your purchase</h1>
+                <h3>Spiderman</h3>
+                <h3>Total price 15$</h3>  
+            </div>
 
-        <div class="image">
-            <img src="images/spidermanposter.jpg"/>
-        </div>
-                  
-        <div class="content">
-            <h2>Spiderman</h2>
-            <h2>Total price 15$</h2>  
-        </div>
+        </section>
 
-       <div class="some">
-            <p>Follow us<i class="fa-brands fa-facebook"></i><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-twitter"></i></p>
-       </div>
+        <section class="info">
+            <div class="some-details">
+                <p>Follow us<i class="fa-brands fa-facebook"></i><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-twitter"></i></p>
+            </div>
        
-       <div class="button">
-            <button type="watchnow" class="watchnow-button">Watch now</button>
-       </div>
-        
-       <div class="continue-search">
-            <h3>Continue search<i class="fa-solid fa-angle-right" id="icon"></i></h3>
-       </div>
+            <div class="links">
+                <a class="button">Watch now</a>
+              
+                <h4>Continue search<i class="fa-solid fa-angle-right" id="icon"></i></h4>
+            </div>
+
+        </section>
         
     </main>
+    <footer>
+        <i class="fa-brands fa-facebook"></i><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-twitter"></i> Copyright &copy; Square eyes 2023
+    </footer>
 </body>
 </html>

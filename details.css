@@ -1,133 +1,117 @@
 body {
-    background-color: black;
     background-image: url('images/spidermanbackround2.jpg');
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-img{
-    max-width: 10%;
+.movie-intro {
+    display: flex;
+    margin-bottom: 160px;
 }
 
-.fa-solid {
-    color: white;
-    margin-left: 50px;
-    margin-top: -50px;
-}
-
-nav {
-    margin-top: -50px;
-}
-
-nav li {
-    display: inline-block;
-    float: right;
-}
-
-nav a {
-    font-family: 'anek tamil', 'sans serif';
-    color: white;
-    text-decoration: none;
-    padding: 30px;
-}
-
-nav a:hover {
-    color: #c4c3c3;
-}
-
-main {
-    display: grid;
-    width: 100%;
-    grid-gap: 1em;
-    grid-template-columns: 10% 30% 30% 30%;
-    grid-template-rows: 5% 5% 15% 30% 20% 2%;
-    grid-template-areas: 
-    '. h1 . .'
-    '. h2 . .'
-    '. p . .'
-    '. form spidermanposter info'
-    '. starring . .'
-    '. . . .';
-}
-
-h1 {grid-area: h1;}
-h2 {grid-area: h2;}
-p {grid-area: p;}
-.spidermanposter {grid-area: spidermanposter;}
-form {grid-area: form;}
-.starring {grid-area: starring;}
-.info {grid-area: info;}
-
-h1 {
-    color: white;
-    font-family: 'bakbak one', cursive;
-    font-size: 35px;
-    grid-area: h1;
-    margin: 1;
-}
-
-h2 {
-    color: white;
-    font-family: 'bakbak one', cursive;
-    font-size: 13px;
-    grid-area: h2;
-    margin: 3;
-}
-
-p {
-    color: white;
-    font-family: 'anek tamil', 'sans serif';
-    font-size: 20px;
-    grid-area: p;
-    margin: 0;
+.poster-container {
+    max-width: 300px; 
 }
 
 .spidermanposter {
-    max-width: 35%;
-    height: auto;
-    grid-area: spidermanposter;
-    justify-self: right;
+    width: 200px;
 }
 
-.addtochartinput {
-    font-family: 'anek tamil', 'sans serif';
-    font-size: 26px;
-    background-color: #d69b28;
-    border-color: #543f17;
-    border-radius: 2em;
-    padding: 6px 17px;
-    margin-top: 1em;
-    cursor: pointer;
-    justify-self: center;
+.paragraph-one {
+    margin-bottom: 80px;
 }
 
-.addtochartinput a {
-    text-decoration: none;
-    color: black;
-    font-family: 'anek tamil', 'sans serif';
+.button {
+    margin: 70px;
 }
 
-.addtochartinput:hover {
-    background-color: #ebbe5e;
+h1 {
+    /*should i make one size to fit all h1, except the home page?*/
+}
+
+h2 {
+    font-size: 16px;
+}
+
+img {
+    width: 100%;
+}
+
+figure {
+    padding: 10px;
+}
+
+.starring-images {
+    display: flex;
+    max-width: 250px;   /*changes the size of the images*/
+}
+
+.director-image {
+    display: flex;
+    max-width: 100px;
+}
+
+.movie-details {
+    line-height: 5px;
 }
 
 h3 {
-    color: white;
-    font-family: 'bakbak one', cursive;
-    font-size: 15px;
-    margin: 0;
+    font-size: 18px;
 }
 
-h4, h5, h6 {
-    color: white;
-    font-family: 'bakbak one', cursive;
-    font-size: 15px;
-    margin: 0;
+
+
+/*Styles for phone*/
+
+@media only screen and (max-width: 600px) {
+
+    .movie-intro {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 24px;
+        padding: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .spidermanposter {
+        width: 250px;
+        margin-top: 20px;
+        margin-left: 50%;
+    }
+
+    .button {
+        margin-left: 200px;
+    }
+
+    /*make more space after the button when phone size???*/
+
+
 }
 
-p2 {
-    color: white;
-    font-family: 'anek tamil', 'sans serif';
-    font-size: 15px;
+
+
+/* Styles for tablets*/
+
+@media only screen and (min-width:601px) and (max-width:900px) {
+    
+    h1 {
+        font-size: 26px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .spidermanposter {
+        width: 180px;
+    }
+
+}
+
 }

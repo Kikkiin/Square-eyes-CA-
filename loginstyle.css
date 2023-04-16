@@ -3,88 +3,85 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     font-family: 'anek tamil', 'sans serif';
-}
-
-img{
-    max-width: 10%;
-}
-
-.fa-solid {
     color: white;
-    margin-left: 50px;
-    margin-top: -50px;
 }
 
-h1 {
-    font-family: 'bakbak one', cursive;
-    color: white;
-    display:flex;
-    justify-content: center;
-}
 
-form {
-    display: grid;
-    grid-gap: 10px;
-    min-height: 200px;
+.form-details, h1 {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .forminput {
-    display: block;
     width: 20rem;
     height: 2rem;
     background-color: white;
     opacity: 40%;
     border-radius: 1em;
-    border-color: white;
 }
 
 .emailinput ,.passwordinput {
-    color: white;
     font-size: 22px;
 }
 
-.checks {
-    display: block;
-}
-
 .forgotpasswordinput {
-    color: white;
     font-size: 11px;
 }
 
 .createaccountinput {
-    color: white;
     font-size: 15px;
+    margin-bottom: 80px;
 }
 
-.signininput {
-    font-size: 24px;
-    background-color: #d69b28;
-    border-color: #543f17;
-    border-radius: 2em;
-    padding: 6px 17px;
-    margin-top: 1em;
-    cursor: pointer;
-    justify-content: right;
+
+
+/*Styles for phone*/
+
+@media only screen and (max-width: 600px) {
+    
+    body {
+        background-size: 330%;
+        background-position: center center;
+        overflow: hidden;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+
+    .forminput {
+        width: 12rem;
+        font-size: 16px;    
+    }
+
+    .emailinput, .passwordinput {
+        font-size: 18px;
+    }
+
+    .forgotpasswordinput {
+        font-size: 10px;
+    }
+
+    .createaccountinput {
+        font-size: 14px;
+    }
 }
 
-.signininput a {
-    text-decoration: none;
-    color: black;
+
+/* Styles for tablets*/
+
+@media only screen and (min-width:601px) and (max-width:900px) {
+    
+    body {
+        background-size: 200%;
+        background-position: center center;
+        overflow: hidden;
+    }
 }
 
-.signininput:hover {
-    background-color: #ebbe5e;
-}
 
-input [type="text"] {
-    padding: 5px;
-    width: 100%;
-    min-height: 20px;
-    min-width: 8px;
-    color: white;
-}
 
 
 
