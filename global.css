@@ -1,5 +1,6 @@
 body {
     background-color: black;
+    margin: 0 auto;
 }
 
 main {
@@ -15,13 +16,18 @@ header {
 h1, h2 {
     font-family: 'bakbak one', cursive;
     color: white;
-    font-size: 30px;
+    font-size: 32px;
 }
 
 h3 {
     font-family: 'bakbak one', cursive;
     color: white;
-    font-size: 20px;
+    font-size: 22px;
+}
+
+h4 {
+    font-family: 'bakbak one', cursive;
+    color: white;
 }
 
 p {
@@ -52,6 +58,7 @@ nav li {
 
 nav a {
     font-family: 'anek tamil', 'sans serif';
+    font-size: 20px;
     color: white;
     text-decoration: none;
     padding: 30px;
@@ -86,21 +93,48 @@ figure {
     font-weight: bold;
 }
 
-footer {
-    font-family: 'anek tamil', 'sans serif';
+.footer-container {
+    margin-top: 150px;
+    padding: 20px 10%;
+    background: #212121;
     color: white;
-    font-size: 12px;    
-    position: fixed;
-    bottom: 0;
-    left: 0;
+    display: flex;
+    justify-content: space-between;
 }
 
-footer i {
-    padding: 10px;
+.footer-container div {
+    text-align: center;
+    margin-right: 10px;
 }
 
+.footer-container h3 {
+    margin-bottom: 30px;
+}
 
+.footer-input {
+    width: 400px;
+    height: 40px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 
+.footer-button {
+    background: #d69b28;
+    border: 2px solid #543f17;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
 
 
 
@@ -126,6 +160,10 @@ footer i {
         padding: 5px 11px;
     }
 
+    .footer-input {
+        max-width: 200px;
+        height: 30px;
+    }
 
 }
 

@@ -32,9 +32,13 @@ h1, h2 {
     max-width: 250px;           /*by default the margin around the pictures tend to be quite big, så you can change thsi to me 0 if the images get small*/
 }
 
-p {
+h3 {
     font-size: 38px;
     margin-bottom: 150px;
+}
+
+h4 {
+    font-size: 22px;
 }
 
 
@@ -76,6 +80,10 @@ p {
     .cover4, .cover5, .cover6, .cover7 {
         max-width: 100px;
         padding: 5px;
+    }
+
+    h3 {
+        font-size: 24px;
     }
 
     p {

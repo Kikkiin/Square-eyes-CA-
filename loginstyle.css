@@ -1,11 +1,11 @@
 body{
     background-image: url('images/backround-login.JPG');
-    background-size: cover;
+    background-size: 140%;
+    height: 100vh;
     background-repeat: no-repeat;
     font-family: 'anek tamil', 'sans serif';
     color: white;
 }
-
 
 .form-details, h1 {
     display: flex;
@@ -27,13 +27,29 @@ body{
 }
 
 .forgotpasswordinput {
-    font-size: 11px;
+    font-size: 15px;
+    margin-bottom: 50px;
 }
 
 .createaccountinput {
-    font-size: 15px;
+    font-size: 20px;
     margin-bottom: 80px;
 }
+
+.createaccountinput:hover,
+.forgotpasswordinput:hover {
+    color: #d69b28;
+    cursor: pointer;
+}
+
+.checks {
+    display: none;
+}
+
+.footer-container {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
 
 
 
@@ -53,19 +69,19 @@ body{
 
     .forminput {
         width: 12rem;
-        font-size: 16px;    
+        font-size: 20px;    
     }
 
     .emailinput, .passwordinput {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .forgotpasswordinput {
-        font-size: 10px;
+        font-size: 16px;
     }
 
     .createaccountinput {
-        font-size: 14px;
+        font-size: 19px;
     }
 }
 
@@ -77,7 +93,6 @@ body{
     body {
         background-size: 200%;
         background-position: center center;
-        overflow: hidden;
     }
 }
 

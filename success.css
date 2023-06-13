@@ -3,6 +3,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    height: 100vh;
 }
 
 .purchase-details {
@@ -31,7 +32,8 @@ h1 {
     flex-direction: column;
     align-items: flex-end;
     margin: -200px;
-    margin-right: 150px;
+    margin-right: 100px;
+    margin-bottom: px;
     transform: rotate(-3deg);
 }
 
@@ -51,6 +53,7 @@ h1 {
 
 .button {
     margin-right: 100px;
+    cursor: pointer;
 }
 
 h4 {
@@ -59,8 +62,23 @@ h4 {
     font-size: 25px;
 }
 
+h4:hover {
+    color: #d69b28;
+    cursor: pointer;
+}
+
 #icon {
-    color: black;
+    color: white;
+}
+
+/*
+.success-main {
+    margin-bottom: 200px;
+}*/
+
+.footer-container {
+    background-color: rgba(0, 0, 0, 0.4);
+    margin-top: 280px;
 }
 
 
@@ -105,7 +123,7 @@ h4 {
         margin: 5px;
     }
 
-    p {
+    .some-text  {
         position: absolute;
         bottom: 0;
         left: 55%;
@@ -136,7 +154,6 @@ h4 {
     body {
         background-size: 200%;
         background-position: center center;
-        overflow: hidden;
     }
 
     .purchase-details {
@@ -149,7 +166,7 @@ h4 {
 
     .info {
         margin-right: px;
-        margin: -140px;
+        margin: -120px;
     }
 
     h1 {
@@ -160,11 +177,11 @@ h4 {
         margin: 5px;
     }
 
-    p {
+    .some-text {
         position: absolute;
         bottom: 0;
-        left: 60%;
-        margin-bottom: -30px;
+        left: 70%;
+        margin-bottom: -20px;
     }
 
     .button {
@@ -176,6 +193,10 @@ h4 {
         margin-right: 180px;
         margin-top: 40px;
         font-size: 20px;
+    }
+
+    .footer-container {
+        margin-top: 200px;
     }
 
 }
