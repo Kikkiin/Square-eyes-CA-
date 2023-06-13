@@ -47,7 +47,7 @@ fieldset {
     font-size: 10px;
 }
 
-input [type="text"] {
+input[type="text"] {
     padding: 5px;
     width: 100%;
     min-height: 20px;
@@ -73,6 +73,7 @@ input [type="text"] {
     
     .container {
         min-height: 40vh;
+        width: 100%;
     }
 
     fieldset {
