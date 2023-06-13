@@ -79,7 +79,7 @@ h4 {
 
     .cover4, .cover5, .cover6, .cover7 {
         max-width: 100px;
-        padding: 5px;
+        padding: 2px;
     }
 
     h3 {
@@ -87,7 +87,7 @@ h4 {
     }
 
     p {
-        font-size: 20px;
+        font-size: 16px;
     }
 
 }
