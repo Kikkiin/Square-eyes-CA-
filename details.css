@@ -58,6 +58,10 @@ h3 {
     font-size: 18px;
 }
 
+.footer-container {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
 
 
 /*Styles for phone*/
@@ -85,6 +89,12 @@ h3 {
 
     .button {
         margin-left: 150px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        line-height: 2px;
     }
 }
 

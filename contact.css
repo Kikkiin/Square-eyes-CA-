@@ -129,6 +129,12 @@ input [type="text"] {
     height: 200px;
 }
 
+.footer-container {
+    background-color: rgba(0, 0, 0, 0.4);
+    margin-top: 300px;
+}
+
+
 
 
 /* Style for phones */

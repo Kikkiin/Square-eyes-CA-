@@ -73,6 +73,7 @@ input [type="text"] {
     .container {
         min-height: 40vh;
     }
+
     fieldset {
         padding: 10px;
         width: 100px;
