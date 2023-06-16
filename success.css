@@ -33,7 +33,7 @@ h1 {
     align-items: flex-end;
     margin: -200px;
     margin-right: 100px;
-    margin-bottom: px;
+    margin-bottom: 200px;
     transform: rotate(-3deg);
 }
 
@@ -115,7 +115,7 @@ h4:hover {
 
     .info {
         margin-right: px;
-        margin: -140px;
+        margin: -120px;
     }
 
     .some-details i {
@@ -170,7 +170,6 @@ h4:hover {
     }
 
     .info {
-        margin-right: px;
         margin: -120px;
     }
 
@@ -199,10 +198,5 @@ h4:hover {
         margin-top: 40px;
         font-size: 20px;
     }
-
-    .footer-container {
-        margin-top: 200px;
-    }
-
 
 }
