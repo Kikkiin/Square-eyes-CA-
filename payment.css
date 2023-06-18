@@ -4,7 +4,6 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     height: 100vh;
-    /*background-attachment: fixed;*/
 }
 
 .container {
@@ -72,7 +71,7 @@ input[type="text"] {
 @media only screen and (max-width: 600px) {
     
     .container {
-        min-height: 30vh;
+        min-height: 100vh;
         margin-left: auto;
         margin-right: auto;
     }
