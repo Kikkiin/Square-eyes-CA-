@@ -71,15 +71,15 @@ input[type="text"] {
     
     .container {
         min-height: 40vh;
-        margin-left: 50%;
+        margin-left: ;
         margin-right: 50%;
     }
-/*
+
     fieldset {
-        padding: 18px;
+        padding: 20px;
         width: 40px;
         align-items: center;
-    }*/
+    }
 
     .footer-container {
         flex-direction: column;
