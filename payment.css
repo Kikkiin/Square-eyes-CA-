@@ -72,7 +72,7 @@ input[type="text"] {
 @media only screen and (max-width: 600px) {
     
     .container {
-        min-height: 40vh;
+        min-height: 30vh;
         margin-left: auto;
         margin-right: auto;
     }
