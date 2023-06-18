@@ -73,8 +73,8 @@ input[type="text"] {
     
     .container {
         min-height: 40vh;
-        margin-left: 2px;
-        margin-right: 20px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     fieldset {
