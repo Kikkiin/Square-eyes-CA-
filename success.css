@@ -2,7 +2,7 @@ body {
     background-image: url(images/backroundsuccess.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
     height: 100vh;
 }
 
@@ -149,7 +149,7 @@ h4:hover {
 
 /* Styles for tablets*/
 
-@media only screen and (min-width:601px) and (max-width:901px) {
+@media only screen and (min-width:601px) and (max-width:900px) {
 
     body {
         background-size: 260%;
