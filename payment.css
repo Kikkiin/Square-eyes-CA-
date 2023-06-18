@@ -75,13 +75,13 @@ input[type="text"] {
         margin-left: 0;
         margin-right: auto;
     }*/
-/*
+
     fieldset {
-        padding: 20px;
-        width: 70px;
+        padding: 18px;
+        width: 50px;
         align-items: center;
     }
-*/
+
     .footer-container {
         flex-direction: column;
         align-items: center;
