@@ -10,7 +10,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    grid-gap: 10px;
     min-height: 70vh;
 }
 
@@ -69,14 +68,13 @@ input[type="text"] {
 /*Styles for phone*/
 
 @media only screen and (max-width: 600px) {
-    /*
+    
     .container {
-        flex-direction: column;
         min-height: 40vh;
-        margin-left: 0;
-        margin-right: auto;
+        margin-left: 50%;
+        margin-right: 50%;
     }
-
+/*
     fieldset {
         padding: 18px;
         width: 40px;
