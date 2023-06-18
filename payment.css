@@ -69,15 +69,17 @@ input[type="text"] {
 /*Styles for phone*/
 
 @media only screen and (max-width: 600px) {
-    /*
+    
     .container {
+        flex-direction: column;
         min-height: 40vh;
         margin-left: 0;
         margin-right: auto;
-    }*/
+    }
 
     fieldset {
-        width: 50px;
+        padding: 18px;
+        width: 40px;
         align-items: center;
     }
 
