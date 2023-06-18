@@ -71,11 +71,6 @@ h4:hover {
     color: white;
 }
 
-/*
-.success-main {
-    margin-bottom: 200px;
-}*/
-
 .footer-container {
     background-color: rgba(0, 0, 0, 0.4);
     margin-top: 280px;
@@ -157,7 +152,7 @@ h4:hover {
 @media only screen and (min-width:601px) and (max-width:900px) {
 
     body {
-        background-size: 250%;
+        background-size: 260%;
         background-position: center center;
     }
 
