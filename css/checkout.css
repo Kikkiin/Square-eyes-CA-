@@ -1,9 +1,3 @@
-body {
-    background-image: url('images/backround\ buy\ chechout.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-}
 
 .checkout-intro {
     display: flex;
@@ -14,13 +8,19 @@ body {
     color: #d69b28;
     font-family: 'bakbak one', cursive;
     font-size: 26px;
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
 .spidermanposter {
     width: 200px;
     justify-content: center;
     align-items: center;
+}
+
+.posterContainer {
+    width: 230px;
+    height: 350px;
+    padding: 3%;
 }
 
 .payment-details {

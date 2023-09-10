@@ -104,7 +104,7 @@ figure {
 
 .footer-container div {
     text-align: center;
-    margin-right: 10px;
+    /*margin-right: 10px;*/ /*To remove the content from leaking out on the right side on the about and contact page when looking on iphone size. */
 }
 
 .footer-container h3 {
@@ -135,6 +135,15 @@ figure {
     justify-content: center;
     align-items: center;
     height: 100px;
+}
+
+.footer-section-one a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section-one a:hover {
+    color: #c4c3c3;
 }
 
 

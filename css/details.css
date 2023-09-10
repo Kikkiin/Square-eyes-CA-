@@ -1,18 +1,17 @@
-body {
-    background-image: url('images/spidermanbackround2.jpg');
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
+
+.image-container {
+    width: 350px;
+    height: 450px;
 }
 
 .movie-intro {
     display: flex;
-    margin-bottom: 160px;
+    margin-bottom: 10px;
 }
 
 .poster-container {
-    max-width: 300px; 
+    max-width: 900px; 
+    padding: 20px;
 }
 
 .spidermanposter {
@@ -25,7 +24,7 @@ body {
 }
 
 .button {
-    margin: 70px;
+    margin: 350px;
 }
 
 h2 {
@@ -48,10 +47,6 @@ figure {
 .director-image {
     display: flex;
     max-width: 100px;
-}
-
-.movie-details {
-    line-height: 5px;
 }
 
 h3 {

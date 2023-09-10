@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="The payment page to Square eyes website"/>
-    <link href="global.css" rel="stylesheet">
-    <link href="payment.css" rel="stylesheet"> 
+    <link href="../css/global.css" rel="stylesheet">
+    <link href="../css/payment.css" rel="stylesheet"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
@@ -15,17 +15,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anek+Tamil&family=Bakbak+One&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/348dd23869.js" crossorigin="anonymous"></script>
+    <script defer src="../js/payment.js"></script>
 </head>
 <body>
     <header>
-        <a href="index.html"><img src="images/SquareEyes_Logo.png" alt="Logo for this page" class="logo"/></a>
+        <a href="../index.html"><img src="../images/SquareEyes_Logo.png" alt="Logo for this page" class="logo"/></a>
         
-        <a href="checkout.html"><i class="fa-solid fa-angle-left"></i></a> 
+        <a href="../html/checkout.html"><i class="fa-solid fa-angle-left"></i></a> 
         <nav>
             <ul>
-                <li><a href="login.html">Hi Kristin</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="../html/login.html">Hi Kristin</a></li>
+                <li><a href="../html/about.html">About</a></li>
+                <li><a href="../html/contact.html">Contact</a></li>
                 <li><a href="shoppingbag.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
                 <li><a href="searchbar.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
             </ul>
@@ -53,7 +54,7 @@
         </form>
 
         <div class="button-container">
-            <a href="success.html" class="button">Purchase</a>
+            <a id="addToCartButton" class="button">Purchase</a>
         </div>
     </main> 
     <footer>

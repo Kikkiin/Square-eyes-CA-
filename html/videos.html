@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="The list of videos page to Square eyes website"/>
-    <link href="global.css" rel="stylesheet">
-    <link href="videos.css" rel="stylesheet"> 
+    <link href="../css/global.css" rel="stylesheet">
+    <link href="../css/videos.css" rel="stylesheet"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
@@ -15,63 +15,51 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anek+Tamil&family=Bakbak+One&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/348dd23869.js" crossorigin="anonymous"></script>
+    <script defer src="../js/script.js"></script>
 </head>
 <body>
     <header>
-        <a href="index.html"><img src="images/SquareEyes_Logo.png" alt="Logo for this page" class="logo"/></a>
+        <a href="../index.html"><img src="../images/SquareEyes_Logo.png" alt="Logo for this page" class="logo"/></a>
 
-        <a href="login.html"><i class="fa-solid fa-angle-left"></i></a>   
+        <a href="../html/login.html"><i class="fa-solid fa-angle-left"></i></a>   
         <nav>
             <ul>
-                <li><a href="login.html">Hi Kristin</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="../html/login.html">Hi Kristin</a></li>
+                <li><a href="../html/about.html">About</a></li>
+                <li><a href="../html/contact.html">Contact</a></li>
                 <li><a href="shoppingbag.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
                 <li><a href="searchbar.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
             </ul>
         </nav>
     </header>
+    
     <main>
         <section class="videos-intro">
              <div>
-                <h1>Stream spiderman now</h1>
-                <a href="details.html" class="click-here">Click here</a>
+                <h1>Stream batman now</h1>
+                <a href="../html/details.html?id=972df6d3-b4e8-44c1-9dec-cadd3b35102e" class="click-here">Click here</a>
              </div>
 
              <figure class="backround">
-                 <img src="images/spidermanlistofv.jpg" class="spiderbackround1" alt="spiderman backround picture"/>
+                 <img src="../images/batman.jpg" class="batmanbackround1" alt="batman backround picture"/>
              </figure>        
         </section>
 
-        <section class="movies1">
-            <h3>Top rated</h3>
-            <figure class="movies-top-rated">
-                <img src="images/SpiritedAway.jpg" class="cover1" alt="movie poster spirited away"/>
-                <img src="images/TheDarkKnight.jpg" class="cover2" alt="movie poster the dark night"/>
-                <img src="images/ToyStory.jpeg" class="cover3" alt="movie poster toy story"/>
-                <img src="images/Hollywood.jpeg" class="cover4" alt="movie poster hollywood"/>
-                <img src="images/ScaryMovie.jpg" class="cover5" alt="movie poster scary movie"/>
-                <img src="images/ItsaSummer.jpg" class="cover6" alt="movie poster its a summer"/>
-                <img src="images/Jaws.jpg" class="cover7" alt="movie poster jaws"/>
-                <i class="fa-solid fa-chevron-right"></i>
-            </figure>
+        <section class="movies-container-one">
+            <div class="movie-section">
+                <h3>Top rated</h3>
+                <div id="movies-container-top-rated" class="movies-top-rated"></div>
+            </div>
         </section>
-
-        <section class="movies2">
-            <h3>Trending</h3>
-            <figure class="movies-trending">
-                <img src="images/MeanGirls.jpg" class="cover8" alt="movie poster mean girls"/>
-                <img src="images/Titanic.jpg" class="cover9" alt="movie poster titanic"/>
-                <img src="images/Untouchables.jpg" class="cover10" alt="movie poster untouchables"/>
-                <img src="images/LesMiserables.png" class="cover11" alt="movie poster les miserables"/>
-                <img src="images/Shawshank.jpg" class="cover12" alt="movie poster shawshank"/>
-                <img src="images/CityofGod.jpg" class="cover13" alt="movie poster city of good"/>
-                <img src="images/ForestGump.jpg" class="cover14" alt="movie poster forest gump"/>
-                <i class="fa-solid fa-chevron-right"></i>
-            </figure>
-        </section>
-
+    
+        <section class="movies-container-two">
+            <div class="movie-section">
+                <h3>Trending</h3>
+                <div id="movies-container-trending" class="movies-trending"></div>
+             </div>
+        </section> 
     </main>
+
     <footer>
         <div class="footer-container">
             <div class="footer-section-one">

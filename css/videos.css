@@ -8,9 +8,9 @@ nav a {
     padding: 10px;                /*since the spiderman backround picture is moved closer to the top, i adjustet the padding in the nav bar*/
 }
 
-.spiderbackround1 {
+.batmanbackround1 {
     width: 400px;
-    margin-top: -180px;
+    margin-top: -120px;
 }
 
 .click-here {
@@ -31,13 +31,33 @@ h3 {
 
 .movies-top-rated, .movies-trending {
     display: flex;
-    justify-content: space-between;      /*the images will be evenly inside the flexbox*/
-    gap: 30px;                          /*every images will have a gap of 30px bewteen them*/
+    flex-direction: row;
+    gap: 20px;
 }
 
+.movies-container-one, .movies-container-two {
+    display: flex;
+    flex-direction: column;
+    overflow-x: scroll; 
+    scroll-snap-type: x proximity;
+    max-height: 900px;
+} 
+
+.movies-top-rated::-webkit-scrollbar, .movies-trending::-webkit-scrollbar {
+    display: none; /* Skjul synlig rullefelt i WebKit-baserte nettlesere (Chrome, Safari) */
+} 
+
 .movies-top-rated img, .movies-trending img {
-    width: 100%;                        /*this change the image size by taking up as much space in the flexbox as it can together*/
+    width: 200px;                        /*this change the image size by taking up as much space in the flexbox as it can together*/
     height: auto;
+    scroll-snap-align: start;
+    margin-bottom: 30px;
+} 
+
+.movies-top-rated img:hover,
+.movies-trending img:hover {
+    transform: scale(1.1); /* Øk størrelsen med 10% */
+    transition: transform 0.3s ease; /* Legg til en jevn overgangseffekt */
 }
 
 .fa-solid {
@@ -68,8 +88,20 @@ h3 {
     }
 
     .movies-top-rated, .movies-trending {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .movies-top-rated img, .movies-trending img {
+        width: 200px;
+        margin-right: 20px;
+        height: auto;
+    }
+
+/*
+    .movies-top-rated, .movies-trending {
         display: flex; 
-        overflow-x: scroll;              /*this shows my images in a carusell on mobile devices*/
+        overflow-x: scroll;              /*this shows my images in a carusell on mobile devices
         scroll-snap-type: x mandatory;
         width: 80%;
         height: 400px;
@@ -77,14 +109,14 @@ h3 {
         min-height: 100%;
         margin-left: 10%;
         margin-right: 10%;
-    }
-
+    }*/
+/*
     .movies-top-rated img, .movies-trending img {
         flex: 0 0 100%;
         scroll-snap-align: start;
-        width: 80%;                     /*the image is using 80% of the carusell container*/
+        width: 80%;                     /*the image is using 80% of the carusell container
         height: auto;
-        max-width: 100%;                /*so the images dont strecth out of proprsions*/
+        max-width: 100%;                /*so the images dont strecth out of proprsions
         max-height: 100%;
     }
 }
@@ -101,14 +133,14 @@ h3 {
     nav a {
         padding: 10px;
     }
-    
+    /*
     .movies-top-rated, .movies-trending {
         display: flex;
         flex-direction: column;
         width: 60%;
         margin-left: 20%;
         margin-right: 10%;
-    }
+    }*/
 
     .fa-solid {
         display: none;

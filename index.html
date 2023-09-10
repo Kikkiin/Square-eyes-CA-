@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link href="global.css" rel="stylesheet">
-    <link href="indexstyle.css" rel="stylesheet">
+    <link href="css/global.css" rel="stylesheet">
+    <link href="css/indexstyle.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
@@ -15,6 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anek+Tamil&family=Bakbak+One&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/348dd23869.js" crossorigin="anonymous"></script>
+    <script defer src="js/index.js"></script>
 </head>
 
 <body>
@@ -23,9 +24,9 @@
         <a href="index.html"><img src="images/SquareEyes_Logo.png" class="logo" alt="Logo for this page"></a>
         <nav>
             <ul>
-                <li><a href="login.html">Log in</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="html/login.html">Log in</a></li>
+                <li><a href="html/about.html">About</a></li>
+                <li><a href="html/contact.html">Contact</a></li>
                 <li><a href="shoppingbag.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
                 <li><a href="searchbar.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
             </ul>
@@ -37,7 +38,7 @@
             <div>
                 <h1>Watch high quality films directly from the source</h1>
 
-                <a href="login.html" class="button">Get started</a>
+                <a href="html/login.html" class="button">Get started</a>
             </div>
 
             <figure class="cover-container">
@@ -48,12 +49,7 @@
         <section class="home-continue">
             <h2>Easily discover great collections or browse through different categories to find films</h2>
         
-            <figure class="cover-content">
-                <img src="images/Square_Eyes_Cover5.jpeg" class="cover5" alt="movie cover sweetheart"/>
-                <img src="images/Square_Eyes_Cover6.jpeg" class="cover6" alt="movie cover the addams family"/>
-                <img src="images/Square_Eyes_Cover4.jpeg" class="cover4" alt="movie cover scream"/>
-                <img src="images/Square_Eyes_Cover7.jpeg" class="cover7" alt="movie cover batman"/>
-            </figure>    
+            <div id="image-container" class="cover-content"></div>    
             
             <h3>Welcome to the Nordics' widest selection of rental and purchase movies. We offer everything from the latest blockbuster films to smaller quality films and series. Here, you only pay for what you want to watch.</h3>
         </section>
@@ -63,8 +59,8 @@
         <div class="footer-container">
             <div class="footer-section-one">
                 <h4>Links</h4>
-                <p>About</p>
-                <p>Contact</p>
+                <p><a href="html/about.html">About</a></p>
+                <p><a href="html/contact.html">Contact</a></p>
                 <p>Support</p>
                 <p>Help desk</p>
                 <p>Terms and conditions</p>

@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="The checkout prosess page to Square eyes website"/>
-    <link href="global.css" rel="stylesheet">
-    <link href="checkout.css" rel="stylesheet"> 
+    <link href="../css/global.css" rel="stylesheet">
+    <link href="../css/checkout.css" rel="stylesheet"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
@@ -15,17 +15,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anek+Tamil&family=Bakbak+One&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/348dd23869.js" crossorigin="anonymous"></script>
+    <script defer src="../js/checkout.js"></script>
 </head>
 <body>
     <header>
-        <a href="index.html"><img src="images/SquareEyes_Logo.png" alt="Logo for this page" class="logo"/></a>
+        <a href="../index.html"><img src="../images/SquareEyes_Logo.png" alt="Logo for this page" class="logo"/></a>
 
-        <a href="details.html"><i class="fa-solid fa-angle-left"></i></a>    
+        <a href="html/details.html"><i class="fa-solid fa-angle-left"></i></a>    
         <nav class="top-nav">
             <ul>
-                <li><a href="login.html">Hi Kristin</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="../html/login.html">Hi Kristin</a></li>
+                <li><a href="../html/about.html">About</a></li>
+                <li><a href="../html/contact.html">Contact</a></li>
                 <li><a href="shoppingbag.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
                 <li><a href="searchbar.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
             </ul>
@@ -34,22 +35,19 @@
 
     <main>
         <section class="checkout-intro">
-            <figure class="poster-container">
-                <img src="images/spidermanposter.jpg" class="spidermanposter" alt="spiderman movie poster"/>
-            </figure> 
 
+            <div id="checkout-image" class="posterContainer"></div>
+               
             <div>
-                <h1>Spiderman 2</h1>
                 <form>
                     <input type="checkbox" id="buy-for-15$" name="buy for 15$" value="buy for 15$" class="checks">
-                    <label for="buy-for-15$" class="buyforinput">Buy for 15$</label>
+                    <label for="buy-for-15$" class="buyforinput">Buy for <span id="moviePriceElement"></span> $</label>
+                    <p>Enjoy the convenience of a full-price purchase, which comes with a more flexible return policy, giving you peace of mind with your shopping.</p>
                     
-                    <p>Watch the movie whenever you want, as many times as you want</p>
                     <input type="checkbox" id="rent-for-5$" name="rent for 5$" value="rent for 5$" class="checks">
-                    <label for="rent-for-5$" class="rentforinput">Rent for 5$</label>
-
-                    <p>Watch the movie as many times as you want for the next 24 hours.</p>
-                </form>   
+                    <label for="rent-for-5$" class="rentforinput">Now on sale for <span id="movieSalePriceElement"></span> $</label>
+                    <p>Hurry, this limited-time offer expires soon, so don't miss out on the savings!</p>
+                </form>
             </div>
         </section>  
 
@@ -69,7 +67,7 @@
 
         <section class="button-container">
             <div>
-                <a href="payment.html" class="button">Purchase</a>
+                <a id="addToCartButton" class="button">Purchase</a>
             </div>
         </section>
     </main>
