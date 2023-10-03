@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Checkout success</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout success</title>
-    <meta name="description" content="The checkout success page to Square eyes website"/>
+    <title>Shoppingbag</title>
+    <meta name="description" content="The shoppingbag page to Square eyes website"/>
     <link href="../css/global.css" rel="stylesheet">
-    <link href="../css/success.css" rel="stylesheet"> 
+    <link href="../css/shoppingbag.css" rel="stylesheet"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
@@ -16,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anek+Tamil&family=Bakbak+One&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/348dd23869.js" crossorigin="anonymous"></script>
-    <script defer src="../js/success.js"></script>
+    <script defer src="../js/shoppingbag.js"></script>
 
         <!-- Hotjar Tracking Code for https://effortless-chimera-019bbe.netlify.app/ -->
         <script>
@@ -29,7 +28,7 @@
             a.appendChild(r);
             })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
         </script>
-        
+
 </head>
 <body>
     <header>
@@ -39,40 +38,42 @@
                 <li><a href="../html/login.html">Hi Kristin</a></li>
                 <li><a href="../html/about.html">About</a></li>
                 <li><a href="../html/contact.html">Contact</a></li>
-                <li><a href="shoppingbag.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
                 <li><a href="videos.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section class="purchase-details">
-            <figure id="posterContainer" class="posterContainer"></figure>   
-            
-            <div class="details">
-                <h1>Thank you for your purchase</h1>
-            </div>
-        </section>
 
-        <section class="info">
-            <div class="some-details">
-                <p class="some-text">Follow us<i class="fa-brands fa-facebook"></i><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-twitter"></i></p>
+    <main>
+        <section class="shoppingbag-layout">
+            <div class="shoppingbag-left">
+
+                <div id="cart-items">
+                    <h1>Your items</h1>
+                </div>
+
+                <p>Total Price: <span id="cart-total"></span></p>
+
+                <div>
+                    <button id="clear-cart" class="button">Clear cart</button>
+                </div>
             </div>
-       
-            <div class="links">
-                <a class="button">Watch now</a>
-              
+
+            <div class="shoppingbag-right">
+                <a id="addToCartButton" class="button">Purchase</a>
                 <a href="videos.html" class="continue-search"><h3>Continue search<i class="fa-solid fa-angle-right" id="icon"></i></h3></a>
             </div>
         </section>
     </main>
+
     <footer>
         <div class="footer-container">
             <p>Support</p>
             <p>Help desk</p>
             <p>Terms and conditions</p>
-            <p>Privacy policy</p>
+            <p>Privacy policy</p>            
             <p>Copyright &copy; Square eyes 2023</p>
         </div>
     </footer>
+    
 </body>
 </html>

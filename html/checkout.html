@@ -16,29 +16,48 @@
     <link href="https://fonts.googleapis.com/css2?family=Anek+Tamil&family=Bakbak+One&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/348dd23869.js" crossorigin="anonymous"></script>
     <script defer src="../js/checkout.js"></script>
+
+        <!-- Hotjar Tracking Code for https://effortless-chimera-019bbe.netlify.app/ -->
+        <script>
+            (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:3660276,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+            })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+        </script>
+        
 </head>
 <body>
     <header>
         <a href="../index.html"><img src="../images/SquareEyes_Logo.png" alt="Logo for this page" class="logo"/></a>
 
-        <a href="html/details.html"><i class="fa-solid fa-angle-left"></i></a>    
         <nav class="top-nav">
             <ul>
                 <li><a href="../html/login.html">Hi Kristin</a></li>
                 <li><a href="../html/about.html">About</a></li>
                 <li><a href="../html/contact.html">Contact</a></li>
-                <li><a href="shoppingbag.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
-                <li><a href="searchbar.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li class="cart-icon-container">
+                    <a href="shoppingbag.html" id="cart-icon" class="cart-icon">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span id="cart-count" class="cart-count">0</span>
+                    </a>
+                    <div id="cart-popup" class="cart-popup"></div>
+                </li>
+                <li><a href="videos.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <h1 class="main-title" id="movieTitleElement"></h1>
+            
         <section class="checkout-intro">
-
             <div id="checkout-image" class="posterContainer"></div>
                
-            <div>
+            <div class="checkout-form">
                 <form>
                     <input type="checkbox" id="buy-for-15$" name="buy for 15$" value="buy for 15$" class="checks">
                     <label for="buy-for-15$" class="buyforinput">Buy for <span id="moviePriceElement"></span> $</label>
@@ -51,7 +70,7 @@
             </div>
         </section>  
 
-        <section class="payment-method">
+        <!-- <section class="payment-method">
             <div class="payment-details">
                 <input type="checkbox" id="menu-checkbox">
                 <label for="menu-checkbox"><i class="fa-solid fa-angle-down"> Payment method</i></label>
@@ -63,7 +82,7 @@
                     </ul>
                 </nav>
             </div>
-        </section>
+        </section> -->
 
         <section class="button-container">
             <div>

@@ -79,6 +79,7 @@ nav a:hover {
     text-decoration: none;        /*removes the default color/underlines ect on the link*/ 
     transition-property: backround-color;
     transition-duration: 1s;
+    cursor: pointer;
 }
 
 .button:hover {

@@ -1,7 +1,44 @@
 
 .checkout-intro {
     display: flex;
-    justify-content: space-around;         /*makes the child element items evenly and leave a half-size space on either side*/
+    justify-content: space-around;        /* makes the child element items evenly and leave a half-size space on either side*/
+    margin-top: -5%;
+}
+
+.main-title {
+    font-size: 2.5rem;  /* Sett ønsket fontstørrelse */
+    margin-bottom: 20px; /* Gir litt plass under tittelen */
+    margin-bottom: 30px;
+}
+
+.checkout-form {
+    margin-top: 50px;
+    margin-left: 90px;
+}
+
+.cart-count {
+    font-size: 17px;
+    color: red;
+    font-weight: bold;
+}
+
+.cart-movie-image {
+    width: 10%;
+}
+
+#go-to-cart-button {
+    font-family: 'anek tamil', 'sans serif';
+    background-color: #d69b28;
+    border-color: #543f17;
+    color: black;
+    border-radius: 2em;
+    padding: 4px 14px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.cart-popup {
+    margin-top: 20px;
 }
 
 .buyforinput, .rentforinput {
@@ -9,6 +46,7 @@
     font-family: 'bakbak one', cursive;
     font-size: 26px;
     margin: 20px 0;
+    margin-top: 500px;
 }
 
 .spidermanposter {
@@ -23,17 +61,18 @@
     padding: 3%;
 }
 
-.payment-details {
+/* .payment-details {
     display: flex;
     justify-content: center;
     position: relative;
     cursor: pointer;
-}
+} */
 
 .button-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
 }
   
 .bottom-nav,
@@ -58,13 +97,52 @@
     display: block;
 }
 
-.button-container {
-    margin-top: 150px;
-}
-
 .footer-container {
     background-color: rgba(0, 0, 0, 0.4);
 }
+
+
+
+
+/* Stil for popup-handlekurven */
+.cart-icon-container {
+    position: relative;
+}
+
+.cart-icon {
+    position: relative;
+    display: inline-block;
+}
+
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 4px 8px;
+    font-size: 12px;
+}
+
+.cart-popup {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 300px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    padding: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+
+
 
 
 

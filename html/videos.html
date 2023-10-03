@@ -20,20 +20,41 @@
 <body>
     <header>
         <a href="../index.html"><img src="../images/SquareEyes_Logo.png" alt="Logo for this page" class="logo"/></a>
-
-        <a href="../html/login.html"><i class="fa-solid fa-angle-left"></i></a>   
-        <nav>
+<!-- 
+        <a href="../html/login.html"><i class="fa-solid fa-angle-left"></i></a>    -->
+        <nav class="video-nav">
             <ul>
                 <li><a href="../html/login.html">Hi Kristin</a></li>
                 <li><a href="../html/about.html">About</a></li>
                 <li><a href="../html/contact.html">Contact</a></li>
                 <li><a href="shoppingbag.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
-                <li><a href="searchbar.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <!-- <li><a href="searchbar.html"><i class="fa-solid fa-magnifying-glass"></i></a></li> -->
             </ul>
         </nav>
+            <!-- Hotjar Tracking Code for https://effortless-chimera-019bbe.netlify.app/ -->
+    <script>
+        (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:3660276,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+
     </header>
     
     <main>
+        <section>
+            <form class="search-form" action="search-results.html" method="GET">
+                <div class="search-container">
+                    <input type="text" name="query" class="search-input" placeholder="Browse for movies...">
+                </div>
+                <button type="submit" class="search-button">Search</button>
+            </form>
+            <!-- <li><a href="searchbar.html"><i class="fa-solid fa-magnifying-glass"></i>Search movies</a></li> -->
+        </section>
         <section class="videos-intro">
              <div>
                 <h1>Stream batman now</h1>
@@ -47,14 +68,14 @@
 
         <section class="movies-container-one">
             <div class="movie-section">
-                <h3>Top rated</h3>
+                <h3>Top rated ⭐</h3>
                 <div id="movies-container-top-rated" class="movies-top-rated"></div>
             </div>
         </section>
     
         <section class="movies-container-two">
             <div class="movie-section">
-                <h3>Trending</h3>
+                <h3>Trending 🔥</h3>
                 <div id="movies-container-trending" class="movies-trending"></div>
              </div>
         </section> 

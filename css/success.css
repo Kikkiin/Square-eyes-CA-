@@ -20,8 +20,12 @@ body {
     padding: 30px;
 }
 
+#posterContainer {
+    display: flex;
+}
+
 .posterContainer {
-    max-width: 100px;
+    max-width: 70px;
     margin: 10px;
     margin-top: 60px;
 }
@@ -82,6 +86,15 @@ h4:hover {
 .footer-container {
     background-color: rgba(0, 0, 0, 0.4);
     margin-top: 280px;
+}
+
+.continue-search {
+    text-decoration: none;
+}
+
+.continue-search:hover h3,
+.continue-search:hover #icon {
+    color: #d69b28;
 }
 
 

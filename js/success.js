@@ -1,41 +1,72 @@
-const posterContainer = document.querySelector(".posterContainer");
+const posterContainer = document.getElementById('posterContainer');
 
-const queryString = document.location.search;
+
+const queryString = document.location.search;    
 const params = new URLSearchParams(queryString);
-const id = params.get("id");
+const id = params.get('id');
 
-const url = "https://api.noroff.dev/api/v1/square-eyes/" + id;
+const url = 'https://api.noroff.dev/api/v1/square-eyes/';
 
 function showError(message) {
-    const errorContainer = document.getElementById("success-image");
-    errorContainer.innerHTML = `<h2> Error: ${message}</h2>`;
+    const errorContainer = document.getElementById('posterContainer');
+    errorContainer.innerHTML = `<h2>Error: ${message}</h2>`;    
 }
 
 async function fetchMovies() {
     showLoadingIndicator();
-    
+
     try {
-        const response = await fetch(url); 
+        const response = await fetch(url);
 
-        if(!response.ok){
-            throw new Error(`Network response failed to load the movie`);
+        if (!response.ok) {
+            throw new Error('Network response failed to load the movie');
         }
-
-        const json = await response.json();
+            const json = await response.json();
 
         posterContainer.innerHTML = `<div class="details">
-                                        <img src="${json.image}" class="posterContainer">
-                                        <h3>${json.title}</h3>
-                                        <h3>Total price ${json.discountedPrice}</h3>
-                                    </div>` ;            
-                                
+
+                                    </div>`;
+
+            // Hent handlekurvdata fra Local Storage
+        const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        if (cart.length > 0) {
+            console.log('Items in localStorage:', cart);            
+        } else {
+            console.log('No items in localStorage.');
+        }
+
+            // Sjekk om det er filmer i handlekurven
+        if (cart.length > 0) {
+                // Loop gjennom filmene i handlekurven og legg til dem på success-siden
+            cart.forEach((item) => {
+                const cartItemElement = document.createElement('div');
+                cartItemElement.classList.add('cart-item');
+                cartItemElement.innerHTML = `
+                        <img src="${item.image}" alt="${item.title}" class="posterContainer">
+                        <p>${item.title}</p>
+                        <p>${item.price}</p>
+                    `;
+                posterContainer.appendChild(cartItemElement);
+            });
+
+        } else {
+                // Hvis handlekurven er tom, vis en melding til brukeren
+            const emptyCartMessage = document.createElement('p');
+            emptyCartMessage.textContent = 'Your cart is empty.';
+            posterContainer.appendChild(emptyCartMessage);
+        }
+        
     } catch (error) {
-        showError (error.message);
-    }
-}
+        showError(error.message);
+        }
+};
 
-function showLoadingIndicator() {
-    posterContainer.innerHTML = "<p>Loading...</p>";
-}
+    function showLoadingIndicator() {
+        posterContainer.innerHTML = '<p>Loading...</p>';
+    };
 
-fetchMovies(); 
+fetchMovies();
+
+
+

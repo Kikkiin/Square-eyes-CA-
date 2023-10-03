@@ -8,17 +8,22 @@ nav a {
     padding: 10px;                /*since the spiderman backround picture is moved closer to the top, i adjustet the padding in the nav bar*/
 }
 
-.batmanbackround1 {
-    width: 400px;
-    margin-top: -120px;
+.video-nav {
+    margin-top: -175px;
 }
+
+.batmanbackround1 {
+    width: 300px;
+    margin-top: -260px;
+    margin-left: 30px;
+} 
 
 .click-here {
     font-family: 'bakbak one', cursive;
     font-size: 38px;
     color: #d69b28;
     text-decoration: none;
-    margin: 70px;
+    margin: 180px;
 }
 
 .click-here:hover {
@@ -62,6 +67,51 @@ h3 {
 
 .fa-solid {
     margin-top: 80px;
+} 
+
+/* Stil for søkefeltet */
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #543f17;
+    border-radius: 5px;
+    padding: 1px;
+    width: 300px;
+    height: 40px;
+    background-color: black;
+}
+
+.search-icon {
+    margin-right: 5px;
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    width: 100%;
+    background-color: black;
+    color: #f5c565;
+}
+
+.search-button {
+    font-family: 'anek tamil', 'sans serif';
+    background-color: #d69b28;  /*styles for my link, makes it look like a buttton*/
+    border-color: #543f17;
+    color: black;               /*color of the text*/
+    font-size: 22px;
+    border-radius: 2em;
+    padding: 4px 14px;  
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.search-button:hover {
+    background-color: #ebbe5e;
 }
 
 
