@@ -114,13 +114,14 @@ h4:hover {
     
     h1 {
         margin-bottom: 20px;
+        font-size: 22px;
     }
 
     h3 {
         font-size: 13px;
     }
 
-    .poster-container {
+    .posterContainer  {
         margin: 5px;
         margin-top: 30px;
     }
@@ -131,7 +132,7 @@ h4:hover {
 
     .info {
         margin-right: px;
-        margin: -120px;
+        margin: -150px;
     }
 
     .some-details i {
@@ -141,8 +142,15 @@ h4:hover {
     .some-text  {
         position: absolute;
         bottom: 0;
-        left: 55%;
-        margin-bottom: -25px;
+        left: 50%;
+        margin-bottom: -100px;
+        justify-content: center;
+    }
+
+    .links {
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 20%;
     }
 
     .button {
@@ -156,9 +164,6 @@ h4:hover {
         font-size: 16px;
     }
 
-    h1 {
-        font-size: 28px;
-    }
 
     .footer-container {
         flex-direction: column;

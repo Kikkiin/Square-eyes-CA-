@@ -30,3 +30,19 @@
     color: #d69b28;
 }
 
+
+
+
+
+
+/*Styles for phone*/
+
+@media only screen and (max-width: 600px) {
+
+    .shoppingbag-right {
+        margin-right: 10%;
+        margin-top: 30%;
+    }
+
+
+}
