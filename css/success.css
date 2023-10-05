@@ -3,6 +3,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
+    overflow-x: hidden;
 }
 
 .purchase-details {
