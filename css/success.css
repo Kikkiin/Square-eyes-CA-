@@ -106,6 +106,7 @@ h4:hover {
     body {
         background-size: 250%;                  /*zoomes inn on the backround image*/
         background-position: center center;     /*center the picture after zooming in*/
+        overflow-x: hidden;
     }
 
     .purchase-details {
