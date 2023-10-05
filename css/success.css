@@ -132,8 +132,9 @@ h4:hover {
     }
 
     .info {
-        margin-right: px;
-        margin: -180px;
+        justify-content: center;
+        /* margin-right: 20px; */
+        margin: -90px; 
     }
 
     .some-details i {
