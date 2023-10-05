@@ -132,7 +132,7 @@ h4:hover {
 
     .info {
         margin-right: px;
-        margin: -150px;
+        margin: -180px;
     }
 
     .some-details i {
@@ -142,7 +142,7 @@ h4:hover {
     .some-text  {
         position: absolute;
         bottom: 0;
-        left: 50%;
+        left: 40%;
         margin-bottom: -100px;
         justify-content: center;
     }

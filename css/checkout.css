@@ -155,10 +155,15 @@
         background-position: center center;
     }
     
-    .posterContainer {
+    /* .posterContainer {
         width: 150px;
+        height: 160px;
         padding: 20px;
         margin-top: 20px;
+    } */
+
+    .cart-movie-image {
+        width: 5%;
     }
 
     .payment-details {
