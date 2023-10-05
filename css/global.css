@@ -68,6 +68,32 @@ nav a:hover {
     color: #c4c3c3;
 }
 
+.cart-count {
+    font-size: 17px;
+    color: red;
+    font-weight: bold;
+}
+
+.cart-icon-container {
+    position: relative;
+} 
+
+.cart-icon {
+    position: relative;
+    display: inline-block;
+}
+
+.cart-count {
+    position: absolute; 
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 4px 8px;
+    font-size: 12px;
+}
+
 .button {
     font-family: 'anek tamil', 'sans serif';
     background-color: #d69b28;  /*styles for my link, makes it look like a buttton*/

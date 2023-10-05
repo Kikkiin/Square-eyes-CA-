@@ -9,6 +9,8 @@ const goToCartButton = document.getElementById('go-to-cart-button');
 
 let cartCount = parseInt(localStorage.getItem('cartCount')) || 0;
 let cart = JSON.parse(localStorage.getItem('cart')) || []; 
+cartCountElement.textContent = cartCount;
+
 
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
@@ -49,9 +51,10 @@ async function fetchMovies() {
         
             // Oppdater handlekurv-ikonets antall basert på lengden av handlekurven
             cartCount = cart.length;
-            localStorage.setItem('cartCount', cartCount.toString());
             cartCountElement.textContent = cartCount;
-        
+            localStorage.setItem('cartCount', cartCount.toString());
+          
+
             // Vis handlekurv-popup
             showCartPopup();
         
@@ -64,13 +67,11 @@ async function fetchMovies() {
             document.getElementById('cart-total').textContent = calculateTotalPrice();  
         
 
-        
-
             // window.location.href = `../html/payment.html?id=${json.id}`;
 
             goToCartButton.addEventListener('click', () => {
                 // Naviger til handlekurvsiden
-                window.location.href = '../html/shoppingbag.html';
+                // window.location.href = '../html/shoppingbag.html';
             
                 // Send med handlekurvdata som en query parameter
                 const cartData = encodeURIComponent(JSON.stringify(cart));

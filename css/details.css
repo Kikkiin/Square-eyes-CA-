@@ -81,9 +81,10 @@ h3 {
     }
 
     .image-container {
-        width: 250px;
-        margin-top: 20px;
-        margin-left: 30%;
+        width: 180px;
+        height: 245px;
+        margin-top: 15px;
+        margin-left: 25%;
     }
 
     .button {
@@ -111,8 +112,8 @@ h3 {
         font-size: 22px;
     }
 
-    .poster-container {
-        width: 180px;
+    .image-container {
+        width: 220px;
     }
 
     .footer-container {

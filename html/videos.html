@@ -16,19 +16,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Anek+Tamil&family=Bakbak+One&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/348dd23869.js" crossorigin="anonymous"></script>
     <script defer src="../js/script.js"></script>
+    <script defer src="../js/cart.js"></script>
 </head>
 <body>
     <header>
         <a href="../index.html"><img src="../images/SquareEyes_Logo.png" alt="Logo for this page" class="logo"/></a>
-<!-- 
-        <a href="../html/login.html"><i class="fa-solid fa-angle-left"></i></a>    -->
+ 
         <nav class="video-nav">
             <ul>
                 <li><a href="../html/login.html">Hi Kristin</a></li>
                 <li><a href="../html/about.html">About</a></li>
                 <li><a href="../html/contact.html">Contact</a></li>
-                <li><a href="shoppingbag.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
-                <!-- <li><a href="searchbar.html"><i class="fa-solid fa-magnifying-glass"></i></a></li> -->
+                <li class="cart-icon-container">
+                    <a href="shoppingbag.html" id="cart-icon" class="cart-icon">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span id="cart-count" class="cart-count">0</span>
+                    </a>
+                    <div id="cart-popup" class="cart-popup"></div>
+                </li>            
             </ul>
         </nav>
             <!-- Hotjar Tracking Code for https://effortless-chimera-019bbe.netlify.app/ -->

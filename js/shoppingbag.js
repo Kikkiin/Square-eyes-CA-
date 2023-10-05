@@ -38,7 +38,9 @@ document.addEventListener('DOMContentLoaded', () => {
         cartItemElement.classList.add('cart-item');
 
         cartItemElement.innerHTML = `<div><p>${item.title}</p></div> 
-                                    <img src="${item.image}" alt="${item.title} "class="posterContainer">
+                                    <a href="../html/details.html?id=${item.id}" class="movie-link">
+                                        <img src="${item.image}" alt="${item.title} "class="posterContainer">
+                                    </a>
                                     <div><p>${item.price}<p></div>
                                     <button class="remove-from-cart" data-id="${item.id}">Remove</button>
                                     `;        
@@ -61,8 +63,6 @@ document.addEventListener('DOMContentLoaded', () => {
     checkoutButton.addEventListener('click', () => {
     });
 });
-
-const index = cart.findIndex(item => String(item.id) === String(movieId));
 
 function removeFromCart(movieId) {
     // Fjern elementet fra handlekurven basert på ID

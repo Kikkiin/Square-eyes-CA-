@@ -5,11 +5,17 @@
 }   
 
 nav a {
-    padding: 10px;                /*since the spiderman backround picture is moved closer to the top, i adjustet the padding in the nav bar*/
+    padding: 5px;                /*since the spiderman backround picture is moved closer to the top, i adjustet the padding in the nav bar*/
 }
 
 .video-nav {
-    margin-top: -175px;
+    margin-top: -150px;
+    margin-right: 20px;
+}
+
+.cart-count {
+    top: 40px;
+    right: -5px;
 }
 
 .batmanbackround1 {
