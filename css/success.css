@@ -27,8 +27,12 @@ body {
 
 .posterContainer {
     max-width: 70px;
-    margin: 10px;
+    margin: 12px;
     margin-top: 60px;
+}
+
+.cart-item p {
+    padding: 5px;
 }
 
 .spidermanposter {
@@ -105,7 +109,7 @@ h4:hover {
 @media only screen and (max-width: 600px) {
 
     body {
-        background-size: 250%;                  /*zoomes inn on the backround image*/
+        background-size: 290%;                  /*zoomes inn on the backround image*/
         background-position: center center;     /*center the picture after zooming in*/
         overflow-x: hidden;
     }
@@ -115,8 +119,8 @@ h4:hover {
     }
     
     h1 {
-        margin-bottom: 20px;
-        font-size: 22px;
+        margin-top: -40px;
+        font-size: 20px;
     }
 
     h3 {
@@ -125,7 +129,7 @@ h4:hover {
 
     .posterContainer  {
         margin: 5px;
-        margin-top: 30px;
+        margin-top: 5px;
     }
 
     .spidermanposter {

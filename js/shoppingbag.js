@@ -51,7 +51,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const removeButton = cartItemElement.querySelector(".remove-movie");
 
         removeButton.addEventListener("click", (event) => {
-            console.log("Remove button clicked!");
             const movieId = event.target.getAttribute("data-id");
             removeFromCart(movieId);
             document.getElementById('cart-total').textContent = calculateTotalPrice(); 
@@ -66,7 +65,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function removeFromCart(movieId) {
-    console.log("Removing movie with ID:", movieId);
     // First, remove the cart item from the visual representation
     const cartItemElementToRemove = document.querySelector(`.cart-item [data-id="${movieId}"]`).closest('.cart-item');
     if (cartItemElementToRemove) {

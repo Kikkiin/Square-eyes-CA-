@@ -70,6 +70,10 @@ h3 {
 
 @media only screen and (max-width: 600px) {
 
+    .details-nav {
+        margin-top: 2px;
+    }
+
     .movie-intro {
         flex-direction: column;
     }

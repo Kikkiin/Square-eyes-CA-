@@ -135,7 +135,7 @@
     margin-top: 20px;
     top: 40px;
     right: 0;
-    width: 270px;
+    width: 330px;
     background-color: rgb(252, 208, 97);
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -161,6 +161,10 @@
     body {
         background-size: 320%;
         background-position: center center;
+    }
+
+    .top-nav {
+        margin-top: 2px;
     }
 
     h1 {
