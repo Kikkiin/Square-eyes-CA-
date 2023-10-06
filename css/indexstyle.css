@@ -7,6 +7,15 @@ h1, h2 {
     margin-bottom: 100px;
 }
 
+h2 {
+    font-size: 48px;
+}
+
+h3 {
+    font-family: 'anek tamil', 'sans serif';
+    font-size: 23px;
+}
+
 .button {
     font-size: 37px;
     padding: 10px 20px;           /*borders from the text to the outerlines of the frame*/

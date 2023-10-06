@@ -9,7 +9,7 @@ nav a {
 }
 
 .video-nav {
-    margin-top: -150px;
+    margin-top: -175px;
     margin-right: 20px;
 }
 
@@ -186,7 +186,7 @@ h3 {
  /*Styles for tablets*/
 
 @media only screen and (min-width:601px) and (max-width:900px) {
-    
+
     .batmanbackround1 {
         width: 300px;
         margin-top: -100px;

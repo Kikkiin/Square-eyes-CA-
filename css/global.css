@@ -10,7 +10,10 @@ main {
 
 header {
     margin-bottom: 50px;
+}
 
+nav ul {
+    margin-top: 45px;
 }
 
 h1, h2 {
@@ -110,6 +113,21 @@ nav a:hover {
 
 .button:hover {
     background-color: #ebbe5e;  /*changes the color when the mouse is over the link*/
+}
+
+.remove-movie {
+    font-family: 'anek tamil', 'sans serif';
+    background-color: rgb(227, 111, 3);
+    border-color:grey;
+    border-radius: 1em;
+    border: 1px solid;
+    padding: 2px 8px; 
+    margin: 10px;
+    cursor: pointer;
+}
+
+.remove-movie:hover {
+    background-color: #c4c3c3;
 }
 
 figure {
