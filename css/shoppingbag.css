@@ -27,8 +27,12 @@ nav ul {
 
 .continue-search {
     text-decoration: none;
+}
+
+.continue-search h3 {
     font-size: 20px;
 }
+
 
 .continue-search:hover h3,
 .continue-search:hover #icon {
