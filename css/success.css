@@ -13,6 +13,10 @@ body {
     transform: rotate(-3deg);    /* rotate all the content 3degres*/
 }
 
+.success-nav {
+    transform: rotate(-3deg); 
+}
+
 .details {
     display: flex;
 }
@@ -179,6 +183,7 @@ h4:hover {
     body {
         background-size: 250%;
         background-position: center center;
+        overflow-x: hidden;
     }
 
     .purchase-details {
