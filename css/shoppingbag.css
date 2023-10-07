@@ -29,11 +29,6 @@ nav ul {
     text-decoration: none;
 }
 
-.continue-search h3 {
-    font-size: 20px;
-}
-
-
 .continue-search:hover h3,
 .continue-search:hover #icon {
     color: #d69b28;
@@ -55,6 +50,10 @@ nav ul {
     .shoppingbag-right {
         margin-right: 10%;
         margin-top: 30%;
+    }
+
+    .continue-search h3 {
+        font-size: 16px;
     }
 
     .footer-container {
