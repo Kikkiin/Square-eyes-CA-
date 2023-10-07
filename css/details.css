@@ -21,15 +21,6 @@
     padding: 20px;
 }
 
-.spidermanposter {
-    width: 200px;
-}
-
-.paragraph-one {
-    margin-bottom: 80px;
-    font-size: 20px;
-}
-
 .button {
     margin: 20%;
 }
@@ -38,26 +29,12 @@ h2 {
     font-size: 18px;
 }
 
-img {
-    width: 100%;
-}
-
-figure {
-    padding: 10px;
-}
-
-.starring-images {
-    display: flex;
-    max-width: 250px;   /*changes the size of the images*/
-}
-
-.director-image {
-    display: flex;
-    max-width: 100px;
-}
-
 h3 {
     font-size: 18px;
+}
+
+img {
+    width: 100%;
 }
 
 .footer-container {
@@ -113,10 +90,6 @@ h3 {
     
     h1 {
         font-size: 26px;
-    }
-
-    .paragraph-one {
-        font-size: 22px;
     }
 
     .image-container {

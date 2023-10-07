@@ -35,10 +35,6 @@ body {
     padding: 5px;
 }
 
-.spidermanposter {
-    max-width: 180px;
-} 
-
 h1 {
     margin-bottom: 70px;
     font-size: 35px;
@@ -109,7 +105,7 @@ h4:hover {
 @media only screen and (max-width: 600px) {
 
     body {
-        background-size: 290%;                  /*zoomes inn on the backround image*/
+        background-size: 320%;                  /*zoomes inn on the backround image*/
         background-position: center center;     /*center the picture after zooming in*/
         overflow-x: hidden;
     }
@@ -130,10 +126,6 @@ h4:hover {
     .posterContainer  {
         margin: 5px;
         margin-top: 5px;
-    }
-
-    .spidermanposter {
-        max-width: 90px;
     }
 
     .info {
@@ -191,10 +183,6 @@ h4:hover {
 
     .purchase-details {
         margin: 0;
-    }
-
-    .spidermanposter {
-        max-width: 130px;
     }
 
     .some-details i {

@@ -92,11 +92,6 @@ h4 {
         height: 150px;
     }
 
-    .cover4, .cover5, .cover6, .cover7 {
-        max-width: 100px;
-        padding: 2px;
-    }
-
     h3 {
         font-size: 24px;
     }
@@ -114,10 +109,6 @@ h4 {
 
     .cover2 {
         max-width: 400px;
-    }
-
-    .cover4, .cover5, .cover6, .cover7 {
-        max-width: 200px;
     }
 
 
