@@ -34,26 +34,12 @@ h2 {
     font-size: 18px;
 }
 
-img {
-    width: 100%;
-}
-
-figure {
-    padding: 10px;
-}
-
-.starring-images {
-    display: flex;
-    max-width: 250px;   /*changes the size of the images*/
-}
-
-.director-image {
-    display: flex;
-    max-width: 100px;
-}
-
 h3 {
     font-size: 18px;
+}
+
+img {
+    width: 100%;
 }
 
 .footer-container {
@@ -65,6 +51,10 @@ h3 {
 /*Styles for phone*/
 
 @media only screen and (max-width: 600px) {
+
+    .details-nav {
+        margin-top: 2px;
+    }
 
     .movie-intro {
         flex-direction: column;
@@ -105,10 +95,6 @@ h3 {
     
     h1 {
         font-size: 26px;
-    }
-
-    .paragraph-one {
-        font-size: 22px;
     }
 
     .image-container {

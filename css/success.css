@@ -13,6 +13,10 @@ body {
     transform: rotate(-3deg);    /* rotate all the content 3degres*/
 }
 
+.success-nav {
+    transform: rotate(-3deg); 
+}
+
 .details {
     display: flex;
 }
@@ -27,13 +31,13 @@ body {
 
 .posterContainer {
     max-width: 70px;
-    margin: 10px;
+    margin: 12px;
     margin-top: 60px;
 }
 
-.spidermanposter {
-    max-width: 180px;
-} 
+.cart-item p {
+    padding: 5px;
+}
 
 h1 {
     margin-bottom: 70px;
@@ -105,7 +109,7 @@ h4:hover {
 @media only screen and (max-width: 600px) {
 
     body {
-        background-size: 200%;                  /*zoomes inn on the backround image*/
+        background-size: 250%;                  /*zoomes inn on the backround image*/
         background-position: center center;     /*center the picture after zooming in*/
         overflow-x: hidden;
     }
@@ -115,8 +119,8 @@ h4:hover {
     }
     
     h1 {
-        margin-bottom: 20px;
-        font-size: 22px;
+        margin-top: -40px;
+        font-size: 20px;
     }
 
     h3 {
@@ -125,16 +129,11 @@ h4:hover {
 
     .posterContainer  {
         margin: 5px;
-        margin-top: 30px;
-    }
-
-    .spidermanposter {
-        max-width: 90px;
+        margin-top: 5px;
     }
 
     .info {
         justify-content: center;
-        /* margin-right: 20px; */
         margin: -90px; 
     }
 
@@ -183,14 +182,11 @@ h4:hover {
     body {
         background-size: 250%;
         background-position: center center;
+        overflow-x: hidden;
     }
 
     .purchase-details {
         margin: ;
-    }
-
-    .spidermanposter {
-        max-width: 130px;
     }
 
     .some-details i {

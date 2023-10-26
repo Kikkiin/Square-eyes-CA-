@@ -53,6 +53,10 @@
     font-family: 'anek tamil', 'sans serif';
 }
 
+#go-to-cart-button:hover {
+    background-color: #ebbe5e; 
+}
+
 .buyforinput, .rentforinput {
     color: #d69b28;
     font-family: 'bakbak one', cursive;
@@ -61,52 +65,17 @@
     margin-top: 500px;
 }
 
-.spidermanposter {
-    width: 200px;
-    justify-content: center;
-    align-items: center;
-}
-
 .posterContainer {
     width: 230px;
     height: 350px;
     padding: 3%;
 }
 
-/* .payment-details {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    cursor: pointer;
-} */
-
 .button-container {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 10px;
-}
-  
-.bottom-nav,
-#menu-checkbox {
-    display: none;         /*hides the nav and checkbox by default*/
-}
-
-.bottom-nav li {
-    display: block;       /*shows the nav list vertical*/
-}
-
-.bottom-nav {
-    position: absolute;
-    top: 100%;
-    margin: 0;           /*this code made the nav bar to go underneath the payment method*/
-    padding: 5px;
-    line-height: 50px;
-    cursor: pointer;
-}
-
-#menu-checkbox:checked ~ .bottom-nav {
-    display: block;
 }
 
 .footer-container {
@@ -140,10 +109,11 @@
 .cart-popup {
     display: none;
     position: absolute;
+    margin-top: 20px;
     top: 40px;
     right: 0;
-    width: 300px;
-    background-color: white;
+    width: 330px;
+    background-color: rgb(252, 208, 97);
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
@@ -153,6 +123,9 @@
     overflow-y: auto;
 }
 
+.cart-popup span {
+    font-family: 'anek tamil', 'sans serif';
+}
 
 
 
@@ -165,6 +138,10 @@
     body {
         background-size: 320%;
         background-position: center center;
+    }
+
+    .top-nav {
+        margin-top: 2px;
     }
 
     h1 {
@@ -180,18 +157,6 @@
     .checkout-form {
         margin-top: 10px;
         margin-left: 10px;
-    }
-
-    .cart-movie-image {
-   
-    }
-
-    .payment-details {
-        margin-top: 20px;
-    }
-
-    .bottom-nav {
-        line-height: 35px;
     }
 
     .button-container {

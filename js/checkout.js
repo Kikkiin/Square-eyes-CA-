@@ -42,24 +42,24 @@ async function fetchMovies() {
 
 
         addToCartButton.addEventListener("click", () => {
-            // Legg til elementet i handlekurven (med mindre det allerede er der)
+            
             const existingItemIndex = cart.findIndex((item) => item.id == json.id);
             if (existingItemIndex === -1) {
                 cart.push(json);
                 localStorage.setItem("cart", JSON.stringify(cart));
             }
         
-            // Oppdater handlekurv-ikonets antall basert på lengden av handlekurven
+            
             cartCount = cart.length;
             cartCountElement.textContent = cartCount;
             localStorage.setItem('cartCount', cartCount.toString());
           
 
-            // Vis handlekurv-popup
+            
             showCartPopup();
         
             
-            // Oppdater handlekurv- og popup-visningen
+            
             updateCartView();
             updateCartpopupView();
 
@@ -68,10 +68,7 @@ async function fetchMovies() {
         
 
             goToCartButton.addEventListener('click', () => {
-                // Naviger til handlekurvsiden
-                // window.location.href = '../html/shoppingbag.html';
-            
-                // Send med handlekurvdata som en query parameter
+        
                 const cartData = encodeURIComponent(JSON.stringify(cart));
                 window.location.href = `../html/shoppingbag.html?cartData=${cartData}`;
             });
@@ -124,7 +121,7 @@ function updateCartView() {
 }
 
 function updateCartPopupView() {
-    cartPopup.innerHTML = ""; // Tøm innholdet i popup-vinduet
+    cartPopup.innerHTML = ""; 
 
     if (cart.length === 0) {
         cartPopup.style.display = "none";

@@ -1,4 +1,3 @@
-    // Hent handlekurvdata fra Local Storage
 let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
 const addToCartButton = document.getElementById("addToCartButton");
@@ -26,13 +25,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const checkoutButton = document.getElementById('checkout-button');
     const clearCartButton = document.getElementById('clear-cart');
 
-    // Legg til hendelseslytter for "Clear cart" -knappen
+    
     clearCartButton.addEventListener('click', () => {
         clearCart();
         document.getElementById('cart-total').textContent = '0';
     });
 
-    // Loop gjennom handlekurven og legg til hvert element på shoppingbag.html
+    
     cart.forEach((item) => {
         const cartItemElement = document.createElement('div');
         cartItemElement.classList.add('cart-item');
@@ -60,19 +59,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.getElementById('cart-total').textContent = calculateTotalPrice(); 
 
-    // Legg til en hendelseslytter for "Proceed to Checkout" -knappen
+   
     checkoutButton.addEventListener('click', () => {
     });
 });
 
 function removeFromCart(movieId) {
-    console.log("Removing movie with ID:", movieId);
-    // First, remove the cart item from the visual representation
+    
     const cartItemElementToRemove = document.querySelector(`.cart-item [data-id="${movieId}"]`).closest('.cart-item');
     if (cartItemElementToRemove) {
         cartItemElementToRemove.remove();
     }
-    // Then, update the cart array and local storage
+    
     const index = cart.findIndex(item => String(item.id) === String(movieId));
     if (index !== -1) {
         cart.splice(index, 1);

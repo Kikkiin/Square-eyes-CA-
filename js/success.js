@@ -27,7 +27,6 @@ async function fetchMovies() {
 
                                     </div>`;
 
-            // Hent handlekurvdata fra Local Storage
         const cart = JSON.parse(localStorage.getItem('cart')) || [];
 
         if (cart.length > 0) {
@@ -36,9 +35,9 @@ async function fetchMovies() {
             console.log('No items in localStorage.');
         }
 
-            // Sjekk om det er filmer i handlekurven
+            
         if (cart.length > 0) {
-                // Loop gjennom filmene i handlekurven og legg til dem på success-siden
+            
             cart.forEach((item) => {
                 const cartItemElement = document.createElement('div');
                 cartItemElement.classList.add('cart-item');
@@ -51,7 +50,7 @@ async function fetchMovies() {
             });
 
         } else {
-                // Hvis handlekurven er tom, vis en melding til brukeren
+                
             const emptyCartMessage = document.createElement('p');
             emptyCartMessage.textContent = 'Your cart is empty.';
             posterContainer.appendChild(emptyCartMessage);
