@@ -1,3 +1,6 @@
+.details-nav {
+    margin-top: -120px;
+}
 
 .image-container {
     width: 300px;
@@ -6,7 +9,7 @@
 
 .movie-intro {
     display: flex;
-    margin-bottom: -60px;
+    margin-bottom: 10px;
 }
 
 .movie-intro p {
@@ -16,10 +19,6 @@
 .poster-container {
     max-width: 900px; 
     padding: 20px;
-}
-
-.spidermanposter {
-    width: 200px;
 }
 
 .paragraph-one {

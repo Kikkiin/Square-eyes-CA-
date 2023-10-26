@@ -42,15 +42,16 @@ document.addEventListener('DOMContentLoaded', () => {
                                         <img src="${item.image}" alt="${item.title} "class="posterContainer">
                                     </a>
                                     <div><p>${item.price}<p></div>
-                                    <button class="remove-from-cart" data-id="${item.id}">Remove</button>
+                                    <button class="remove-movie" data-id="${item.id}">Remove</button>
                                     `;        
         
         cartItemsElement.appendChild(cartItemElement);
 
             // Legg til en hendelseslytter for "Remove" -knappen
-        const removeButton = cartItemElement.querySelector(".remove-from-cart");
+        const removeButton = cartItemElement.querySelector(".remove-movie");
 
         removeButton.addEventListener("click", (event) => {
+            console.log("Remove button clicked!");
             const movieId = event.target.getAttribute("data-id");
             removeFromCart(movieId);
             document.getElementById('cart-total').textContent = calculateTotalPrice(); 
@@ -65,18 +66,19 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function removeFromCart(movieId) {
-    // Fjern elementet fra handlekurven basert på ID
+    console.log("Removing movie with ID:", movieId);
+    // First, remove the cart item from the visual representation
+    const cartItemElementToRemove = document.querySelector(`.cart-item [data-id="${movieId}"]`).closest('.cart-item');
+    if (cartItemElementToRemove) {
+        cartItemElementToRemove.remove();
+    }
+    // Then, update the cart array and local storage
     const index = cart.findIndex(item => String(item.id) === String(movieId));
     if (index !== -1) {
         cart.splice(index, 1);
         localStorage.setItem("cart", JSON.stringify(cart));
         updateCartView();
         updateCartPopupView();
-
-        const cartItemElementToRemove = document.querySelector(`.cart-item [data-id="${movieId}"]`).closest('.cart-item');
-        if (cartItemElementToRemove) {
-            cartItemElementToRemove.remove();
-        }
     }
 }
 

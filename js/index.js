@@ -1,52 +1,52 @@
-const featuredMoviesContainer = document.getElementById("image-container");
+const featuredProductsContainer = document.getElementById("image-container");
 
-const squareEyesAPI = "https://api.noroff.dev/api/v1/square-eyes/";
+const apiUrl = 'https://flower-power.local/wp-json/wc/store/products/';
 
 function showError(message) {
     const errorContainer = document.getElementById("image-container");
     errorContainer.innerHTML = `<h3> Error: ${message}</h3>`;
 }
 
-async function fetchMovies() {
+async function fetchProducts() {
     showLoadingIndicator();
 
     try {
-        const response = await fetch(squareEyesAPI);
+        const response = await fetch(apiUrl);
 
         if (!response.ok) {
-            throw new Error("Failed to fetch movies");
+            throw new Error("Failed to load products");
         }
 
-        const movies = await response.json();
+        const products = await response.json();
 
-        const featuredMovies = movies.filter((movie, index) => index < 4);
+        const featuredProducts = products.slice(0, 4);
 
-        return featuredMovies;
+        return featuredProducts;
 
     } catch (error) {
         throw error;
     }
 }
 
-async function displayFeaturedMovies() {
+async function displayFeaturedProducts() {
     try {
-        const featuredMovies = await fetchMovies();
+        const featuredProducts = await fetchProducts();
 
-        featuredMoviesContainer.innerHTML = "";
+        featuredProductsContainer.innerHTML = "";
 
-        featuredMovies.forEach((movie) => {
+        featuredProducts.forEach((product) => {
 
-            const movieLink = document.createElement("a");
-            movieLink.href = `html/details.html?id=${movie.id}`;
+            const productLink = document.createElement("a");
+            productLink.href = `html/details.html?id=${product.id}`;
 
-            const movieElement = document.createElement("img");
+            const productElement = document.createElement("img");
 
-            movieElement.src = movie.image; `<img src="${movie.image}">`
-            movieElement.alt = movie.title; `<alt="${movie.title}">`
-            movieElement.className = "cover-image";
+            productElement.src = product.images[0].src; 
+            productElement.alt = product.name;
+            productElement.className = "cover-image";
 
-            movieLink.appendChild(movieElement);
-            featuredMoviesContainer.appendChild(movieLink);
+            productLink.appendChild(productElement);
+            featuredProductsContainer.appendChild(productLink);
         }); 
 
     } catch (error) {
@@ -55,7 +55,7 @@ async function displayFeaturedMovies() {
 }
 
 function showLoadingIndicator() {
-    featuredMoviesContainer.innerHTML = "<p>Loading...</p>";
+    featuredProductsContainer.innerHTML = "<p>Loading...</p>";
 }
 
-displayFeaturedMovies();
+displayFeaturedProducts();

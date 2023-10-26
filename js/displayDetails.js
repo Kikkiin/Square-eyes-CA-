@@ -4,49 +4,49 @@ const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
 
-const url = "https://api.noroff.dev/api/v1/square-eyes/" + id;
+const apiUrl = `https://flower-power.local/wp-json/wc/store/products/${id}`;
 
 function showError(message) {
     const errorContainer = document.getElementById("details");
-    errorContainer.innerHTML = `<h2> Error: ${message}</h2>`;
+    errorContainer.innerHTML = `<h2>Error: ${message}</h2>`;
 }
 
-async function fetchMovies() {
+async function fetchProduct() {
     showLoadingIndicator();
 
     try {
-        const response = await fetch(url); 
+        const response = await fetch(apiUrl);
 
-        if(!response.ok){
-            throw new Error(`Network response failed to load the movie`);
+        if (!response.ok) {
+            throw new Error(`Network response failed to load the product`);
         }
 
-        const json = await response.json();
+        const product = await response.json();
 
-        document.title = json.title;
+        document.title = product.name;
 
-
-         itemDetails.innerHTML = `<div class ="movie-intro">
-                                    <div>
-                                        <h1>${json.title}</h1>
-                                        <h2>${json.genre}</h2>
-                                        <p>${json.description}</p>
+        itemDetails.innerHTML = `<div class ="movie-intro">
+                                    <div class="movie-info">
+                                        <h1>${product.name}</h1>
+                                        <h2>${product.categories[0].name}</h2>
+                                        <p>${product.description}</p>
                                     </div>
                                     <div class="poster-container">
-                                        <img src="${json.image}" class="image-container"></div>
+                                        <img src="${product.images[0].src}" alt="${product.name}" class="image-container"></div>
                                     </div>
-                                    <div class="movie-details">  
-                                        <h2>Rating ${json.rating}</h2>
-                                        <p>Released ${json.released}</p>
-                                        <p>Favorite: ${json.favorite ? 'Yes' : 'No'}</p>
-                                    </div> `;
+                                
+                                    <div class="movie-details"> 
+                                        <p>${product.short_description}</p>
+                                        <p>Price: ${product.prices.regular_price} $</p>
+                                        <p>Sale Price: ${product.prices.sale_price} $</p>
+                                    </div>`;
 
-         addToCartButton.addEventListener("click", () => {
-            window.location.href = `../html/checkout.html?id=${json.id}`;
-        });                           
+        const addToCartButton = document.getElementById("addToCartButton");
+        addToCartButton.addEventListener("click", () => {
 
+        });
     } catch (error) {
-        showError (error.message);
+        showError(error.message);
     }
 }
 
@@ -54,8 +54,7 @@ function showLoadingIndicator() {
     itemDetails.innerHTML = "<p>Loading...</p>";
 }
 
-fetchMovies();
-
+fetchProduct();
 
 
 

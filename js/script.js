@@ -1,68 +1,53 @@
-const topRatedContainer = document.querySelector("#movies-container-top-rated");
-const trendingContainer = document.querySelector("#movies-container-trending");
+const apiUrl = 'https://flower-power.local/wp-json/wc/store/products/';
 
-const squareEyesAPI = "https://api.noroff.dev/api/v1/square-eyes/";
+async function fetchProducts() {
 
-function showError(message) {
-    const errorContainer = document.getElementById("movies-container-top-rated");
-    errorContainer.innerHTML = `<h2> Error: ${message}</h2>`;
-}
-
-async function fetchMovies() {
-    showLoadingIndicator();
-
-    try {
-        const response = await fetch(squareEyesAPI);
-
-        if(!response.ok){
-            throw new Error("Failed to fetch movies");
-        }
-
-        const result = await response.json();
-        return result;
-
-    } catch (error) {
-        throw error;
-    }
-}
-
-async function displayMovies() {
-    try {
-        const movies = await fetchMovies();
-    
-        topRatedContainer.innerHTML = ""; 
-        trendingContainer.innerHTML = "";
-
-    for(let i = 0; i < movies.length; i++){
-        const movie = movies[i];
-        const imgElement = document.createElement("img");
-
-        imgElement.src = movie.image;
-        imgElement.alt = movie.title;
-
-       topRatedContainer.innerHTML += `
-                                    <a href="details.html?id=${movie.id}" class="movies-top-rated">
-                                        <img src="${movies[i].image}" alt="${movies[i].title}">
-                                    </a>`; 
-    
-        trendingContainer.innerHTML += `
-                                    <a href="details.html?id=${movie.id}" class="movies-trending">
-                                        <img src="${movies[i].image}" alt="${movies[i].title}">
-                                    </a>`;    
+  try {
+    const response = await fetch(apiUrl);
+    if (!response.ok) {
+      throw new Error('Failed to load the product');
     }
 
-    } catch (error) {
-        showError(error.message);
+    const products = await response.json();
+    return products;
+
+  } catch (error) {
+    throw error;
+  }
+}
+
+async function displayProductImages() {
+
+  try {
+    const products = await fetchProducts();
+    const topRatedContainer = document.getElementById('movies-container-top-rated');
+    const trendingContainer = document.getElementById('movies-container-trending');
+
+    topRatedContainer.innerHTML = '';
+    trendingContainer.innerHTML = '';
+
+    for (let i = 0; i < products.length; i++) {
+      const product = products[i];
+      
+      const productImage = document.createElement('img');
+      productImage.src = product.images[0].src; 
+
+            const productLink = document.createElement('a');
+            productLink.href = `details.html?id=${product.id}`;
+            productLink.classList.add('product-link');
+            productLink.appendChild(productImage);
+
+      if (i < products.length / 2) {
+        topRatedContainer.appendChild(productLink);
+      } else {
+        trendingContainer.appendChild(productLink);
+      }
     }
+  } catch (error) {
+    console.error(error);
+  }
 }
 
-function showLoadingIndicator() {
 
-    topRatedContainer.innerHTML = "<p>Loading...</p>";
-    trendingContainer.innerHTML = "<p>Loading...</p>";
-}
-
-displayMovies();
-
-
+displayProductImages();
 

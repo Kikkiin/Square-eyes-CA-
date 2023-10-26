@@ -67,8 +67,6 @@ async function fetchMovies() {
             document.getElementById('cart-total').textContent = calculateTotalPrice();  
         
 
-            // window.location.href = `../html/payment.html?id=${json.id}`;
-
             goToCartButton.addEventListener('click', () => {
                 // Naviger til handlekurvsiden
                 // window.location.href = '../html/shoppingbag.html';
@@ -107,6 +105,24 @@ function showCartPopup() {
      updateCartPopupView();
 }
 
+function addToCart(json) {
+    cart.push(json);
+    localStorage.setitem("cart", JSON.stringify(cart));
+    updateCartView();
+    updateCartpopupView();
+}
+
+function hideCartPopup() {
+    cartPopup.style.display = "none";
+}
+
+function updateCartView() {
+    const cartCountElement = document.getElementById('cart-count');
+    if (cartCountElement) {
+        cartCountElement.textContent = cart.length.toString();
+    }
+}
+
 function updateCartPopupView() {
     cartPopup.innerHTML = ""; // Tøm innholdet i popup-vinduet
 
@@ -116,23 +132,27 @@ function updateCartPopupView() {
         cartPopup.style.display = "block";
 
         // Opprett HTML for hver film i handlekurven
-        cart.forEach((json, index) => {
+        cart.forEach((json) => {
             const movieItem = document.createElement("div");
             movieItem.classList.add("cart-movie");
             movieItem.innerHTML = `
                         <img src="${json.image}" alt="${json.title}" class="cart-movie-image">
                         <span>${json.title}</span>
-                        <button class="remove-movie" data-index="${index}">Remove</button> 
+                        <button class="remove-movie" data-id="${json.id}">Remove</button> 
                         `;
 
-            cartPopup.appendChild(movieItem);
+            
 
             // Legg til en event-lytter for fjern-knappen
             const removeButton = movieItem.querySelector(".remove-movie");
+
             removeButton.addEventListener("click", (event) => {
-                const movieIndex = parseInt(event.target.getAttribute("data-index"));
-                removeFromCart(movieIndex);
+                console.log("Remove button clicked!");
+                const movieId = parseInt(event.target.getAttribute("data-id"));
+                removeFromCart(movieId);
             });
+            
+            cartPopup.appendChild(movieItem);
         });
 
         const goToCartButton = document.createElement("button");
@@ -146,28 +166,17 @@ function updateCartPopupView() {
     }
 }
 
-function addToCart(json) {
-    cart.push(json);
-    localStorage.setitem("cart", JSON.stringify(cart));
-    updateCartView();
-    updateCartpopupView();
-}
-
-function hideCartPopup() {
-    cartPopup.style.display = "none";
-}
-
 // Definer funksjonen removeFromCart for å fjerne filmer fra handlekurven
-function removeFromCart(index) {
-    // Fjern elementet fra handlekurven basert på index
-    if (index >= 0 && index < cart.length) {
+function removeFromCart(movieId) {
+    console.log("Removing movie with ID:", movieId);
+    const index = cart.findIndex(item => item.id == movieId);
+    // Fjern elementet fra handlekurven basert på id
+    if (index !== -1) {
         cart.splice(index, 1);
         localStorage.setItem("cart", JSON.stringify(cart));
         updateCartView();
         updateCartPopupView();
     }
-
-    document.getElementById('cart-total').textContent = calculateTotalPrice(); 
 }
 
 
