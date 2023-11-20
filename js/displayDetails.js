@@ -4,7 +4,7 @@ const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
 
-const apiUrl = `https://flower-power.local/wp-json/wc/store/products/${id}`;
+const apiUrl = `https://kikkin.no/wp-json/wc/store/products/${id}`;
 
 function showError(message) {
     const errorContainer = document.getElementById("details");

@@ -1,4 +1,4 @@
-const apiUrl = 'https://flower-power.local/wp-json/wc/store/products/';
+const apiUrl = 'https://kikkin.no/wp-json/wc/store/products/';
 
 async function fetchProducts() {
 

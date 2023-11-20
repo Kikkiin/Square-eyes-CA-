@@ -1,6 +1,6 @@
 const featuredProductsContainer = document.getElementById("image-container");
 
-const apiUrl = 'https://flower-power.local/wp-json/wc/store/products/';
+const apiUrl = 'https://kikkin.no/wp-json/wc/store/products/';
 
 function showError(message) {
     const errorContainer = document.getElementById("image-container");
